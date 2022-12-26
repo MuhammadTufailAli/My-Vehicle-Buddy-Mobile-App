@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import port from '../Port/Port';
 
 const SelectCategory = ({navigation, route}) => {
@@ -638,6 +638,8 @@ const SelectCategory = ({navigation, route}) => {
           style={{
             color: 'white',
             fontSize: 18,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           Category and SubCategory
         </Text>
@@ -652,7 +654,13 @@ const SelectCategory = ({navigation, route}) => {
             onPress={() => {
               navigation.goBack();
             }}>
-            <Text style={{marginRight: 8, color: 'white'}}></Text>
+            <Text
+              style={{
+                marginRight: 8,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}></Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -749,6 +757,8 @@ const SelectCategory = ({navigation, route}) => {
                       borderBottomWidth: 0.5,
                       borderColor: 'grey',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
 
                       padding: 8,
                     }}>
@@ -768,6 +778,7 @@ const SelectCategory = ({navigation, route}) => {
                 borderColor: 'grey',
                 paddingBottom: 4,
                 color: Font.LabelColor,
+                fontFamily: 'Lexend-Regular',
               }}>
               {title}
             </Text>

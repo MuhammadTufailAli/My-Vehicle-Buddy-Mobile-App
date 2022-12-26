@@ -120,7 +120,14 @@ const ChatOnline = ({onlineUsers, navigation}) => {
             autoPlay
             loop
           />
-          <Text style={{marginLeft: 10, fontSize: 16, color: 'red'}}>
+          <Text
+            style={{
+              marginLeft: 10,
+              fontSize: 16,
+              color: 'red',
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
             No one is online
           </Text>
         </View>
@@ -170,6 +177,8 @@ const ChatOnline = ({onlineUsers, navigation}) => {
                         borderRadius: 50,
                         marginTop: -10,
                         marginLeft: 35,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
                       }}></Text>
                     <Text
                       style={{
@@ -179,8 +188,16 @@ const ChatOnline = ({onlineUsers, navigation}) => {
                         borderRadius: 50,
                         marginTop: -11,
                         marginLeft: 36,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
                       }}></Text>
-                    <Text style={{alignSelf: 'center', color: Font.TextColor}}>
+                    <Text
+                      style={{
+                        alignSelf: 'center',
+                        color: Font.TextColor,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
+                      }}>
                       {o?.firstname}
                     </Text>
                     <Text
@@ -188,6 +205,8 @@ const ChatOnline = ({onlineUsers, navigation}) => {
                         alignSelf: 'center',
                         marginTop: -4,
                         color: Font.TextColor,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
                       }}>
                       {o?.lastname}
                     </Text>

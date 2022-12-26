@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import port from '../Port/Port';
 import React, {useState, useContext, useEffect} from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -97,6 +97,8 @@ const ShopOwnerNotification = ({navigation}) => {
           style={{
             color: 'white',
             fontSize: 18,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           Notifications
         </Text>
@@ -111,7 +113,16 @@ const ShopOwnerNotification = ({navigation}) => {
             onPress={() => {
               navigation.goBack();
             }}>
-            <Text style={{marginRight: 8, color: 'white'}}> Cancel</Text>
+            <Text
+              style={{
+                marginRight: 8,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {' '}
+              Cancel
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -147,9 +158,13 @@ const ShopOwnerNotification = ({navigation}) => {
                   ? {
                       color: 'white',
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }
                   : {
                       color: 'black',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }
               }>
               Product Notification
@@ -182,10 +197,12 @@ const ShopOwnerNotification = ({navigation}) => {
                   ? {
                       color: 'white',
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }
                   : {
                       color: 'black',
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }
               }>
               Admin Notification
@@ -216,6 +233,7 @@ const ShopOwnerNotification = ({navigation}) => {
                   marginLeft: 10,
                   paddingBottom: 80,
                   color: Font.LabelColor,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Fetching Data for You
               </Text>
@@ -240,6 +258,7 @@ const ShopOwnerNotification = ({navigation}) => {
                   fontWeight: '700',
                   marginLeft: 10,
                   color: Font.LabelColor,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 No Notification Yet :(
               </Text>
@@ -262,6 +281,7 @@ const ShopOwnerNotification = ({navigation}) => {
                       fontWeight: '600',
                       fontSize: 15,
                       color: Font.TextBackground,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {array.length} Results
                   </Text>
@@ -292,7 +312,12 @@ const ShopOwnerNotification = ({navigation}) => {
 
               <View style={{margin: 10}}>
                 <Text
-                  style={{fontSize: 20, color: 'black', fontWeight: 'bold'}}>
+                  style={{
+                    fontSize: 20,
+                    color: 'black',
+                    fontWeight: 'bold',
+                    fontFamily: 'Lexend-Regular',
+                  }}>
                   Order History
                 </Text>
               </View>
@@ -346,6 +371,8 @@ const ShopOwnerNotification = ({navigation}) => {
                                 color: 'white',
                                 marginTop: 110,
                                 marginRight: 8,
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               <EvilIcons
                                 name={'image'}
@@ -367,7 +394,13 @@ const ShopOwnerNotification = ({navigation}) => {
                                 flexDirection: 'row',
                                 justifyContent: 'space-between',
                               }}>
-                              <Text style={{marginLeft: 3, color: 'grey'}}>
+                              <Text
+                                style={{
+                                  marginLeft: 3,
+                                  color: 'grey',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
+                                }}>
                                 {item.refOfProduct?.title}
                               </Text>
                               <TouchableOpacity
@@ -375,7 +408,14 @@ const ShopOwnerNotification = ({navigation}) => {
                                   setCondition(!condition);
                                   deleteNotification(item._id);
                                 }}>
-                                <Text style={{color: 'red'}}>Delete</Text>
+                                <Text
+                                  style={{
+                                    color: 'red',
+                                    fontFamily: 'Lexend-Regular',
+                                    fontWeight: '400',
+                                  }}>
+                                  Delete
+                                </Text>
                               </TouchableOpacity>
                             </View>
                             <Text
@@ -384,6 +424,7 @@ const ShopOwnerNotification = ({navigation}) => {
                                 fontSize: 16,
                                 fontWeight: '700',
                                 color: Font.TextBackground,
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               PAID {item.price}
                             </Text>
@@ -391,6 +432,8 @@ const ShopOwnerNotification = ({navigation}) => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               Buyer:{' '}
                               {item.refOfCustomer.firstname +
@@ -402,9 +445,16 @@ const ShopOwnerNotification = ({navigation}) => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               Payment Method:{' '}
-                              <Text style={{color: Font.LabelColor}}>
+                              <Text
+                                style={{
+                                  color: Font.LabelColor,
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
+                                }}>
                                 {item.paymentMethod}
                               </Text>
                             </Text>
@@ -419,6 +469,7 @@ const ShopOwnerNotification = ({navigation}) => {
                                   style={{
                                     color: Font.LabelColor,
                                     fontWeight: 'bold',
+                                    fontFamily: 'Lexend-Regular',
                                   }}>
                                   {item.quantity}
                                 </Text>
@@ -428,13 +479,23 @@ const ShopOwnerNotification = ({navigation}) => {
                                 style={{
                                   marginLeft: 3,
                                   color: 'grey',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
                                 }}>
                                 Status:{' '}
                                 <Text
                                   style={
                                     item.status === 'Pending'
-                                      ? {color: 'yellow', fontWeight: 'bold'}
-                                      : {color: 'green', fontWeight: 'bold'}
+                                      ? {
+                                          color: 'yellow',
+                                          fontWeight: 'bold',
+                                          fontFamily: 'Lexend-Regular',
+                                        }
+                                      : {
+                                          color: 'green',
+                                          fontWeight: 'bold',
+                                          fontFamily: 'Lexend-Regular',
+                                        }
                                   }>
                                   {item.status}
                                 </Text>
@@ -505,13 +566,17 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   modalText3: {
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   TextColor: {
     color: Font.TextBackground,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

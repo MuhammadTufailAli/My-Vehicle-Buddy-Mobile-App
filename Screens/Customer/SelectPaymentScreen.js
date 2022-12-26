@@ -17,7 +17,7 @@ import CartProvider from '../ContextApi/contextApi';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import axios from 'axios';
 import port from '../Port/Port';
 export default function SelectPaymentScreentScreen({navigation, route}) {
@@ -258,13 +258,20 @@ export default function SelectPaymentScreentScreen({navigation, route}) {
             color: 'white',
             fontWeight: '700',
             marginLeft: -10,
+            fontFamily: 'Lexend-Regular',
           }}>
           Payment
         </Text>
         <Text></Text>
       </View>
       <View style={{marginTop: 25, marginLeft: 20, marginRight: 20}}>
-        <Text style={{fontSize: 20, fontWeight: 'bold', color: 'black'}}>
+        <Text
+          style={{
+            fontSize: 20,
+            fontWeight: 'bold',
+            color: 'black',
+            fontFamily: 'Lexend-Regular',
+          }}>
           Select Payment Method
         </Text>
         <View
@@ -281,7 +288,14 @@ export default function SelectPaymentScreentScreen({navigation, route}) {
             }}
             style={{flexDirection: 'row', alignItems: 'center'}}>
             <FontAwesome name={'bank'} size={22} color={'black'} />
-            <Text style={{marginLeft: 10, fontSize: 16, color: 'black'}}>
+            <Text
+              style={{
+                marginLeft: 10,
+                fontSize: 16,
+                color: 'black',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               Credit/Debit Card & Online Bank Transfer
             </Text>
           </TouchableOpacity>
@@ -299,7 +313,14 @@ export default function SelectPaymentScreentScreen({navigation, route}) {
             }}
             style={{flexDirection: 'row', alignItems: 'center'}}>
             <FontAwesome5 name={'hand-holding-usd'} size={22} color={'black'} />
-            <Text style={{marginLeft: 13, fontSize: 16, color: 'black'}}>
+            <Text
+              style={{
+                marginLeft: 13,
+                fontSize: 16,
+                color: 'black',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               Cash on delivery
             </Text>
           </TouchableOpacity>

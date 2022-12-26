@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import Loader from '../Loader/Loader';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import {useIsFocused} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import CartProvider from '../ContextApi/contextApi';
@@ -132,12 +132,7 @@ const WelcomeScreen = ({navigation}) => {
                   onPress={() => {
                     navigation.navigate('Login', {user: 'ShopOwner'});
                   }}>
-                  <Text
-                    style={{
-                      fontSize: 16,
-                      fontWeight: '600',
-                      color: '#f0f0f0',
-                    }}>
+                  <Text style={Commonstyles.white166}>
                     Enter As Shop Owner{' '}
                   </Text>
                 </TouchableOpacity>
@@ -159,14 +154,7 @@ const WelcomeScreen = ({navigation}) => {
                   onPress={() => {
                     navigation.navigate('Login', {user: 'Customer'});
                   }}>
-                  <Text
-                    style={{
-                      fontSize: 16,
-                      fontWeight: '600',
-                      color: '#f0f0f0',
-                    }}>
-                    Enter As Customer
-                  </Text>
+                  <Text style={Commonstyles.white166}>Enter As Customer</Text>
                 </TouchableOpacity>
               </View>
               <View style={{flex: 1}}>
@@ -210,14 +198,7 @@ const WelcomeScreen = ({navigation}) => {
                   onPress={() => {
                     navigation.navigate('Login', {user: 'Mechanic'});
                   }}>
-                  <Text
-                    style={{
-                      fontSize: 16,
-                      fontWeight: '600',
-                      color: '#f0f0f0',
-                    }}>
-                    Enter As Mechanic
-                  </Text>
+                  <Text style={Commonstyles.white166}>Enter As Mechanic</Text>
                 </TouchableOpacity>
               </View>
             </View>

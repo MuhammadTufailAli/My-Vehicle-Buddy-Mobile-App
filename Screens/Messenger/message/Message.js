@@ -51,11 +51,19 @@ function Message({message, own, otherUser}) {
                 borderTopLeftRadius: 5,
                 borderBottomLeftRadius: 50,
                 color: Font.TextColor,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
               }}>
               {message.text}
             </Text>
           </View>
-          <Text style={{marginLeft: 40, color: Font.LightColor}}>
+          <Text
+            style={{
+              marginLeft: 40,
+              color: Font.LightColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
             {moment(message.createdAt).fromNow()}
           </Text>
         </View>
@@ -76,6 +84,8 @@ function Message({message, own, otherUser}) {
               borderBottomRightRadius: 50,
               borderTopLeftRadius: 50,
               borderBottomLeftRadius: 50,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             {message.text}
           </Text>

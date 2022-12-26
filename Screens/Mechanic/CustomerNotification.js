@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import port from '../Port/Port';
 import React, {useState, useContext, useEffect} from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -100,7 +100,12 @@ const CustomerNotification = () => {
                   paddingBottom: 25,
                 }}>
                 <Text style={styles.modalText3}>Rate Product</Text>
-                <Text style={{marginTop: 5}}>
+                <Text
+                  style={{
+                    marginTop: 5,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   Tell us how do you fell about Product ;)
                 </Text>
               </View>
@@ -117,6 +122,7 @@ const CustomerNotification = () => {
                       color: Font.ButtonColor,
                       marginRight: 15,
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     Cancel
                   </Text>
@@ -142,6 +148,7 @@ const CustomerNotification = () => {
                       fontSize: 16,
                       color: Font.LabelColor,
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     Write a Review
                   </Text>
@@ -178,6 +185,7 @@ const CustomerNotification = () => {
                     color: Font.ButtonColor,
                     marginLeft: 15,
                     fontWeight: '600',
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   Cancel
                 </Text>
@@ -198,6 +206,7 @@ const CustomerNotification = () => {
                     color: Font.ButtonColor,
                     marginRight: 15,
                     fontWeight: '600',
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   Post
                 </Text>
@@ -214,7 +223,13 @@ const CustomerNotification = () => {
                   setUserRating(rating);
                 }}
               />
-              <Text style={{color: Font.BackGroundColor, textAlign: 'center'}}>
+              <Text
+                style={{
+                  color: Font.BackGroundColor,
+                  textAlign: 'center',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 Tap a star to rate
               </Text>
             </View>
@@ -256,6 +271,7 @@ const CustomerNotification = () => {
               marginLeft: 10,
               paddingBottom: 80,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Fetching Data for You
           </Text>
@@ -280,6 +296,7 @@ const CustomerNotification = () => {
               fontWeight: '700',
               marginLeft: 10,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             No Notification Yet :(
           </Text>
@@ -302,6 +319,7 @@ const CustomerNotification = () => {
                   fontWeight: '600',
                   fontSize: 15,
                   color: Font.TextBackground,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 {array.length} Results
               </Text>
@@ -329,8 +347,14 @@ const CustomerNotification = () => {
           </View>
 
           <View style={{margin: 10}}>
-            <Text style={{fontSize: 20, color: 'black', fontWeight: 'bold'}}>
-              Order History
+            <Text
+              style={{
+                fontSize: 20,
+                color: 'black',
+                fontWeight: 'bold',
+                fontFamily: 'Lexend-Regular',
+              }}>
+              History
             </Text>
           </View>
 
@@ -382,7 +406,13 @@ const CustomerNotification = () => {
                               flexDirection: 'row',
                               justifyContent: 'space-between',
                             }}>
-                            <Text style={{marginLeft: 3, color: 'grey'}}>
+                            <Text
+                              style={{
+                                marginLeft: 3,
+                                color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
+                              }}>
                               Name: {item.refOfCustomer.firstname}{' '}
                               {item.refOfCustomer.lastname}
                             </Text>
@@ -391,7 +421,14 @@ const CustomerNotification = () => {
                                 setCondition(!condition);
                                 deleteNotification(item._id);
                               }}>
-                              <Text style={{color: 'red'}}>Delete</Text>
+                              <Text
+                                style={{
+                                  color: 'red',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
+                                }}>
+                                Delete
+                              </Text>
                             </TouchableOpacity>
                           </View>
                           <Text
@@ -400,6 +437,7 @@ const CustomerNotification = () => {
                               fontSize: 16,
                               fontWeight: '700',
                               color: Font.TextBackground,
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             PAID {item.price}
                           </Text>
@@ -407,6 +445,8 @@ const CustomerNotification = () => {
                             style={{
                               marginLeft: 3,
                               color: 'grey',
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
                             }}>
                             Work: {item.Description}
                           </Text>
@@ -415,6 +455,8 @@ const CustomerNotification = () => {
                             style={{
                               marginLeft: 3,
                               color: 'grey',
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
                             }}>
                             Payment Method:{' '}
                             <Text style={{color: Font.LabelColor}}>
@@ -430,13 +472,25 @@ const CustomerNotification = () => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               Status:{' '}
                               <Text
                                 style={
                                   item.status === 'Reached'
-                                    ? {color: '#FFBF00', fontWeight: 'bold'}
-                                    : {color: 'green', fontWeight: 'bold'}
+                                    ? {
+                                        color: '#FFBF00',
+                                        fontWeight: 'bold',
+                                        fontFamily: 'Lexend-Regular',
+                                        fontWeight: '400',
+                                      }
+                                    : {
+                                        color: 'green',
+                                        fontWeight: 'bold',
+                                        fontFamily: 'Lexend-Regular',
+                                        fontWeight: '400',
+                                      }
                                 }>
                                 {item.status}
                               </Text>
@@ -502,13 +556,18 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   modalText3: {
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   TextColor: {
     color: Font.TextBackground,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

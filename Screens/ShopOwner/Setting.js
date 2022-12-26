@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext} from 'react';
 import {Text, View, TouchableOpacity, StyleSheet} from 'react-native';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Entypo from 'react-native-vector-icons/Entypo';
 import port from '../Port/Port';
@@ -12,15 +12,40 @@ function Setting({navigation}) {
     return (
       <View>
         <View style={{alignItems: 'center', margin: 10}}>
-          <Text style={{fontSize: 26}}>
-            <Text style={{color: '#8739F9'}}>Welcome </Text>
+          <Text
+            style={{
+              fontSize: 26,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
+            <Text
+              style={{
+                color: '#8739F9',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Welcome{' '}
+            </Text>
             {userdetails?.firstname} {userdetails?.lastname}
           </Text>
         </View>
-        <Text style={{fontSize: 16, marginLeft: 10}}>
+        <Text
+          style={{
+            fontSize: 16,
+            marginLeft: 10,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
+          }}>
           We are glad to see you here.
         </Text>
-        <Text style={{fontSize: 16, marginLeft: 10, marginBottom: 20}}>
+        <Text
+          style={{
+            fontSize: 16,
+            marginLeft: 10,
+            marginBottom: 20,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
+          }}>
           You first have to create shop
         </Text>
         <ImageBackground
@@ -40,7 +65,13 @@ function Setting({navigation}) {
               margin: 10,
               marginTop: '30%',
             }}>
-            <Text style={{color: 'white', fontWeight: '500', fontSize: 16}}>
+            <Text
+              style={{
+                color: 'white',
+                fontWeight: '500',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+              }}>
               Create Shop
             </Text>
           </TouchableOpacity>
@@ -85,7 +116,15 @@ function Setting({navigation}) {
               onPress={() => {
                 navigation.goBack();
               }}>
-              <Text style={{marginRight: 8, color: 'white'}}> </Text>
+              <Text
+                style={{
+                  marginRight: 8,
+                  color: 'white',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                {' '}
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -140,6 +179,7 @@ function Setting({navigation}) {
                   color: Font.LabelColor,
                   fontWeight: '500',
                   fontSize: 18,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 View Shop Details
               </Text>
@@ -179,6 +219,7 @@ function Setting({navigation}) {
                   color: Font.LabelColor,
                   fontWeight: '500',
                   fontSize: 18,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Edit Shop
               </Text>
@@ -217,6 +258,7 @@ function Setting({navigation}) {
                   color: Font.LabelColor,
                   fontWeight: '500',
                   fontSize: 18,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Delete Shop
               </Text>
@@ -244,5 +286,7 @@ const styles = StyleSheet.create({
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

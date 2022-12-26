@@ -9,7 +9,7 @@ import {
   FlatList,
 } from 'react-native';
 import React from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import {Rating, AirbnbRating} from 'react-native-ratings';
 import port from '../Port/Port';
@@ -40,6 +40,7 @@ const AllReviewScreen = ({navigation, route}) => {
             color: 'white',
             fontWeight: '700',
             marginLeft: 139,
+            fontFamily: 'Lexend-Regular',
           }}>
           All Reviews
         </Text>
@@ -75,6 +76,7 @@ const AllReviewScreen = ({navigation, route}) => {
                     fontSize: 15,
                     fontWeight: '600',
                     color: Font.TextColor,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   {item.refOfUser.firstname} {item.refOfUser.lastname}
                 </Text>
@@ -88,13 +90,26 @@ const AllReviewScreen = ({navigation, route}) => {
                   isDisabled
                   showRating={false}
                 />
-                <Text style={{marginLeft: 4, color: Font.TextColor}}>
+                <Text
+                  style={{
+                    marginLeft: 4,
+                    color: Font.TextColor,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   {item.createdAt}
                 </Text>
               </View>
 
               <View style={{marginLeft: 15}}>
-                <Text style={{color: Font.TextColor}}>{item.review}</Text>
+                <Text
+                  style={{
+                    color: Font.TextColor,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
+                  {item.review}
+                </Text>
               </View>
             </View>
           );

@@ -20,7 +20,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 
 import DropDownPicker from 'react-native-dropdown-picker';
 import Loader from '../Loader/Loader';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import CartProvider from '../ContextApi/contextApi';
@@ -193,6 +193,7 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
             fontWeight: '700',
             marginLeft: 10,
             color: Font.LabelColor,
+            fontFamily: 'Lexend-Regular',
           }}>
           Fetching Data for You
         </Text>
@@ -216,8 +217,17 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                     fontWeight: 'bold',
                     marginBottom: 10,
                     color: Font.TextColor,
+                    fontFamily: 'Lexend-Regular',
                   }}>
-                  Edit <Text style={{color: '#8739F9'}}>Product</Text>
+                  Edit{' '}
+                  <Text
+                    style={{
+                      color: '#8739F9',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: 'bold',
+                    }}>
+                    Product
+                  </Text>
                 </Text>
               </View>
 
@@ -268,6 +278,7 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                         fontSize: 16,
                         color: '#8739F9',
                         fontWeight: 'bold',
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       Change Product Photo
                     </Text>
@@ -317,6 +328,7 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                         fontSize: 16,
                         color: '#8739F9',
                         fontWeight: 'bold',
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       Change Product Photo
                     </Text>
@@ -347,6 +359,8 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                         color: Font.LabelColor,
                         marginTop: 5,
                         marginBottom: -8,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
                       }}>
                       Location
                     </Text>
@@ -394,6 +408,8 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                         color: Font.LabelColor,
                         marginTop: 5,
                         marginBottom: -8,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
                       }}>
                       Category Information
                     </Text>
@@ -432,6 +448,8 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                     color: Font.LabelColor,
                     marginTop: 5,
                     marginBottom: -8,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   Title
                 </Text>
@@ -449,6 +467,8 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                     color: Font.LabelColor,
                     marginTop: 5,
                     marginBottom: -8,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   Price
                 </Text>
@@ -500,6 +520,8 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                     fontSize: 15,
                     color: Font.LabelColor,
                     marginTop: 5,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                     marginBottom: -8,
                   }}>
                   Description
@@ -518,6 +540,8 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                     color: Font.LabelColor,
                     marginTop: 5,
                     marginBottom: -8,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   Quantity
                 </Text>
@@ -544,7 +568,14 @@ const ShopOwnerEditProduct = ({navigation, route}) => {
                 onPress={() => {
                   updateAd();
                 }}>
-                <Text style={{color: 'white', fontWeight: '500'}}>Update</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontWeight: '500',
+                    fontFamily: 'Lexend-Regular',
+                  }}>
+                  Update
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -571,6 +602,8 @@ const styles = StyleSheet.create({
     borderColor: '#000000',
     borderBottomWidth: 1,
     marginBottom: 30,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   btnContainer: {
     backgroundColor: 'white',
@@ -591,6 +624,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     fontSize: 18,
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   modalView: {
     width: '96%',
@@ -627,10 +662,14 @@ const styles = StyleSheet.create({
     marginTop: 7,
     marginBottom: 10,
     color: Font.TextColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   buttonText: {
     fontSize: 20,
     color: 'white',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

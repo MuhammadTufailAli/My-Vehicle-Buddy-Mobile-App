@@ -18,7 +18,7 @@ import axios from 'axios';
 import port from '../Port/Port';
 // import AntDesign from 'react-native-vector-icons/AntDesign';
 // import Loader from '../Loader/Loader';
-// import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 // import ImagePicker from 'react-native-image-crop-picker';
 
 function CustomerShopOwnerProducts({navigation, route}) {
@@ -77,6 +77,7 @@ function CustomerShopOwnerProducts({navigation, route}) {
                   color: 'white',
                   fontSize: 20,
                   fontWeight: 'bold',
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 {route.params.user.firstname} {route.params.user.lastname}
               </Text>
@@ -84,6 +85,8 @@ function CustomerShopOwnerProducts({navigation, route}) {
                 style={{
                   color: 'white',
                   fontSize: 16,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {route.params.user.shopname}
               </Text>
@@ -101,6 +104,8 @@ function CustomerShopOwnerProducts({navigation, route}) {
                     marginTop: 5,
                     color: 'blue',
                     textDecorationLine: 'underline',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   View Details
                 </Text>
@@ -128,6 +133,7 @@ function CustomerShopOwnerProducts({navigation, route}) {
                 fontWeight: 'bold',
                 fontSize: 20,
                 color: 'white',
+                fontFamily: 'Lexend-Regular',
               }}>
               Products
             </Text>
@@ -153,6 +159,7 @@ function CustomerShopOwnerProducts({navigation, route}) {
                   fontWeight: '700',
                   marginLeft: 10,
                   color: 'white',
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Fetching Data for You
               </Text>
@@ -218,6 +225,7 @@ function CustomerShopOwnerProducts({navigation, route}) {
                                   marginTop: 7,
                                   marginLeft: 11,
                                   fontSize: 16,
+                                  fontFamily: 'Lexend-Regular',
                                 }}>
                                 {item.title}
                               </Text>
@@ -228,6 +236,7 @@ function CustomerShopOwnerProducts({navigation, route}) {
 
                                   marginLeft: 10,
                                   color: '#8739F9',
+                                  fontFamily: 'Lexend-Regular',
                                 }}>
                                 Rs. {item.price}
                               </Text>
@@ -235,6 +244,8 @@ function CustomerShopOwnerProducts({navigation, route}) {
                                 style={{
                                   marginLeft: 10,
                                   color: 'grey',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
                                 }}>
                                 {item.category}
                               </Text>
@@ -245,9 +256,16 @@ function CustomerShopOwnerProducts({navigation, route}) {
                                   fontWeight: '600',
 
                                   marginLeft: 10,
+                                  fontFamily: 'Lexend-Regular',
                                 }}>
                                 Location:{' '}
-                                <Text style={{color: '#8739F9', fontSize: 16}}>
+                                <Text
+                                  style={{
+                                    color: '#8739F9',
+                                    fontSize: 16,
+                                    fontFamily: 'Lexend-Regular',
+                                    fontWeight: '400',
+                                  }}>
                                   {item.place}
                                 </Text>
                               </Text>
@@ -287,5 +305,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     backgroundColor: '#000000c0',
+    fontFamily: 'Lexend-Regular',
   },
 });

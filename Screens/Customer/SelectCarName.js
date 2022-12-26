@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import port from '../Port/Port';
 
 const SelectCarName = ({navigation, route}) => {
@@ -565,6 +565,8 @@ const SelectCarName = ({navigation, route}) => {
           style={{
             color: 'white',
             fontSize: 18,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           Category and SubCategory
         </Text>
@@ -677,6 +679,8 @@ const SelectCarName = ({navigation, route}) => {
                       borderBottomWidth: 0.5,
                       borderColor: 'grey',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
 
                       padding: 8,
                     }}>
@@ -696,6 +700,7 @@ const SelectCarName = ({navigation, route}) => {
                 borderColor: 'grey',
                 paddingBottom: 4,
                 color: Font.LabelColor,
+                fontFamily: 'Lexend-Regular',
               }}>
               {title}
             </Text>

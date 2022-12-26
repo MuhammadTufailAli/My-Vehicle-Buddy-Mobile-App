@@ -11,7 +11,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import {useIsFocused} from '@react-navigation/native';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import CartProvider from '../ContextApi/contextApi';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Lottie from 'lottie-react-native';
@@ -93,6 +93,7 @@ const MechanicProfile = ({navigation}) => {
                   fontWeight: 'bold',
                   marginTop: 27,
                   marginLeft: 10,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 {userdetails?.firstname + ' ' + userdetails?.lastname}
               </Text>
@@ -138,7 +139,15 @@ const MechanicProfile = ({navigation}) => {
               alignItems: 'center',
               borderColor: 'white',
             }}>
-            <Text style={{fontWeight: 'bold', color: 'white'}}>Logout</Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Logout
+            </Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -155,7 +164,13 @@ const MechanicProfile = ({navigation}) => {
               alignItems: 'center',
               borderColor: 'white',
             }}>
-            <Text style={{fontWeight: 'bold', color: 'white'}}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               Edit Profile
             </Text>
           </TouchableOpacity>
@@ -180,6 +195,7 @@ const MechanicProfile = ({navigation}) => {
                 fontWeight: 'bold',
                 fontSize: 20,
                 color: 'white',
+                fontFamily: 'Lexend-Regular',
               }}>
               My Reviews
             </Text>
@@ -204,6 +220,7 @@ const MechanicProfile = ({navigation}) => {
                   fontWeight: '700',
                   marginLeft: 10,
                   color: 'white',
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Fetching Data for You
               </Text>
@@ -229,6 +246,7 @@ const MechanicProfile = ({navigation}) => {
                   marginLeft: 10,
                   color: 'white',
                   textAlign: 'center',
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 You haven't Posted any Product Yet :(
               </Text>
@@ -266,6 +284,7 @@ const MechanicProfile = ({navigation}) => {
                               fontSize: 15,
                               fontWeight: '600',
                               color: Font.TextColor,
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             {item?.refOfCustomer?.firstname}{' '}
                             {item?.refOfCustomer?.lastname}
@@ -279,7 +298,13 @@ const MechanicProfile = ({navigation}) => {
                             isDisabled
                             showRating={false}
                           />
-                          <Text style={{marginLeft: 4, color: Font.TextColor}}>
+                          <Text
+                            style={{
+                              marginLeft: 4,
+                              color: Font.TextColor,
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
+                            }}>
                             {item?.createdAt}
                           </Text>
                         </View>
@@ -336,5 +361,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     backgroundColor: '#000000c0',
+    fontFamily: 'Lexend-Regular',
   },
 });

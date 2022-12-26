@@ -27,7 +27,7 @@ import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import port from '../Port/Port';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import MapView, {Marker} from 'react-native-maps';
 import {getDistance} from 'geolib';
 
@@ -206,6 +206,7 @@ const MechanicComingToCustomerScreen = ({navigation, route}) => {
                     color: Font.ButtonColor,
                     marginRight: 15,
                     fontWeight: '600',
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   Go Back
                 </Text>
@@ -214,7 +215,13 @@ const MechanicComingToCustomerScreen = ({navigation, route}) => {
             <View style={{marginTop: 20, flex: 5}}>
               <View style={{flex: 1}}>
                 <View style={{alignItems: 'center', flex: 1}}>
-                  <Text style={{color: 'white', fontSize: 18}}>
+                  <Text
+                    style={{
+                      color: 'white',
+                      fontSize: 18,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
                     You reached Customer Location !!!
                   </Text>
                   <Text style={{color: Font.LabelColor}}>
@@ -314,7 +321,15 @@ const MechanicComingToCustomerScreen = ({navigation, route}) => {
             onPress={() => {
               navigation.navigate('MechanicInterface');
             }}>
-            <Text style={{marginRight: 8, color: 'white'}}> Cancel</Text>
+            <Text
+              style={{
+                marginRight: 8,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Cancel
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -373,6 +388,7 @@ const MechanicComingToCustomerScreen = ({navigation, route}) => {
                 color: 'white',
                 fontSize: 18,
                 fontWeight: 'bold',
+                fontFamily: 'Lexend-Regular',
               }}>
               {description}
             </Text>
@@ -384,7 +400,14 @@ const MechanicComingToCustomerScreen = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               {address}
             </Text>
           </View>
@@ -395,9 +418,22 @@ const MechanicComingToCustomerScreen = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               PKR{' '}
-              <Text style={{color: Font.ButtonColor, fontWeight: 'bold'}}>
+              <Text
+                style={{
+                  color: Font.ButtonColor,
+                  fontWeight: 'bold',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 {price}
               </Text>
               , cash
@@ -465,6 +501,8 @@ const styles = StyleSheet.create({
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 
   centeredView: {
@@ -497,13 +535,17 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   modalText3: {
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   TextColor: {
     color: Font.TextBackground,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

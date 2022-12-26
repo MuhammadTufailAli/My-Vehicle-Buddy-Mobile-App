@@ -12,7 +12,7 @@ import {
 import React, {useState, useContext} from 'react';
 import CartProvider from '../ContextApi/contextApi';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import axios from 'axios';
 import port from '../Port/Port';
 
@@ -72,6 +72,7 @@ const CheckoutScreen = ({navigation, route}) => {
               color: 'white',
               fontWeight: '700',
               marginLeft: 83,
+              fontFamily: 'Lexend-Regular',
             }}>
             Order Confirmation
           </Text>
@@ -85,6 +86,7 @@ const CheckoutScreen = ({navigation, route}) => {
               fontWeight: 'bold',
               marginTop: 10,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Contact Information
           </Text>
@@ -97,6 +99,8 @@ const CheckoutScreen = ({navigation, route}) => {
               marginTop: 5,
               marginBottom: -8,
               color: Font.LightColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Name
           </Text>
@@ -119,6 +123,8 @@ const CheckoutScreen = ({navigation, route}) => {
               color: Font.LightColor,
               marginTop: 5,
               marginBottom: -8,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Mobile Number
           </Text>
@@ -143,6 +149,8 @@ const CheckoutScreen = ({navigation, route}) => {
 
               marginTop: 5,
               marginBottom: -8,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Email Address
           </Text>
@@ -177,6 +185,8 @@ const CheckoutScreen = ({navigation, route}) => {
                   color: Font.LightColor,
                   marginTop: 5,
                   marginBottom: -8,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 City
               </Text>
@@ -221,6 +231,8 @@ const CheckoutScreen = ({navigation, route}) => {
 
               marginTop: 5,
               marginBottom: -8,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Address
           </Text>
@@ -248,7 +260,13 @@ const CheckoutScreen = ({navigation, route}) => {
             width: '90%',
             alignItems: 'center',
           }}>
-          <Text style={{fontSize: 16, color: 'white', fontWeight: '700'}}>
+          <Text
+            style={{
+              fontSize: 16,
+              color: 'white',
+              fontWeight: '700',
+              fontFamily: 'Lexend-Regular',
+            }}>
             Proceed to pay
           </Text>
         </TouchableOpacity>
@@ -266,6 +284,8 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginRight: 20,
     color: Font.placeholder,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
     // marginTop: 7,
     // marginBottom: 10,
   },
@@ -277,6 +297,8 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginRight: 20,
     color: Font.placeholder,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
     // marginTop: 7,
     // marginBottom: 10,
   },

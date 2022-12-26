@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import port from '../Port/Port';
 import React, {useState, useContext, useEffect} from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -108,6 +108,8 @@ const MechanicNotification = ({navigation}) => {
           style={{
             color: 'white',
             fontSize: 18,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           Notifications
         </Text>
@@ -122,7 +124,16 @@ const MechanicNotification = ({navigation}) => {
             onPress={() => {
               navigation.goBack();
             }}>
-            <Text style={{marginRight: 8, color: 'white'}}> Cancel</Text>
+            <Text
+              style={{
+                marginRight: 8,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {' '}
+              Cancel
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -149,7 +160,12 @@ const MechanicNotification = ({navigation}) => {
                   paddingBottom: 25,
                 }}>
                 <Text style={styles.modalText3}>Rate Product</Text>
-                <Text style={{marginTop: 5}}>
+                <Text
+                  style={{
+                    marginTop: 5,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   Tell us how do you fell about Product ;)
                 </Text>
               </View>
@@ -316,9 +332,12 @@ const MechanicNotification = ({navigation}) => {
                   ? {
                       color: 'white',
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }
                   : {
                       color: 'black',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }
               }>
               Admin Notification
@@ -351,10 +370,12 @@ const MechanicNotification = ({navigation}) => {
                   ? {
                       color: 'white',
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }
                   : {
                       color: 'black',
                       fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
                     }
               }>
               Customer Notification
@@ -385,6 +406,7 @@ const MechanicNotification = ({navigation}) => {
                   marginLeft: 10,
                   paddingBottom: 80,
                   color: Font.LabelColor,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Fetching Data for You
               </Text>
@@ -409,6 +431,7 @@ const MechanicNotification = ({navigation}) => {
                   fontWeight: '700',
                   marginLeft: 10,
                   color: Font.LabelColor,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 No Notification Yet :(
               </Text>
@@ -431,6 +454,7 @@ const MechanicNotification = ({navigation}) => {
                       fontWeight: '600',
                       fontSize: 15,
                       color: Font.TextBackground,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {array.length} Results
                   </Text>
@@ -461,7 +485,12 @@ const MechanicNotification = ({navigation}) => {
 
               <View style={{margin: 10}}>
                 <Text
-                  style={{fontSize: 20, color: 'black', fontWeight: 'bold'}}>
+                  style={{
+                    fontSize: 20,
+                    color: 'black',
+                    fontWeight: 'bold',
+                    fontFamily: 'Lexend-Regular',
+                  }}>
                   Admin Notifications
                 </Text>
               </View>
@@ -531,6 +560,7 @@ const MechanicNotification = ({navigation}) => {
                                     fontSize: 16,
                                     fontWeight: '700',
                                     color: Font.TextBackground,
+                                    fontFamily: 'Lexend-Regular',
                                   }}>
                                   {item?.adminName}
                                 </Text>
@@ -541,6 +571,7 @@ const MechanicNotification = ({navigation}) => {
                                   marginLeft: 3,
 
                                   color: Font.LightColor,
+                                  fontFamily: 'Lexend-Regular',
                                 }}>
                                 {item?.warning}
                               </Text>
@@ -610,13 +641,17 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   modalText3: {
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   TextColor: {
     color: Font.TextBackground,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

@@ -20,7 +20,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 // import {io} from 'socket.io-client';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Loader from '../Loader/Loader';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
@@ -300,6 +300,7 @@ const ShopOwnerHome = ({navigation}) => {
               marginLeft: 10,
               color: Font.LabelColor,
               textAlign: 'center',
+              fontFamily: 'Lexend-Regular',
             }}>
             Fetching Data for You
           </Text>
@@ -329,11 +330,18 @@ const ShopOwnerHome = ({navigation}) => {
                     alignSelf: 'center',
                     color: 'white',
                     marginTop: 10,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   {array.length}
                 </Text>
                 <Text
-                  style={{alignSelf: 'center', color: 'white', fontSize: 15}}>
+                  style={{
+                    alignSelf: 'center',
+                    color: 'white',
+                    fontSize: 15,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   Total Sold
                 </Text>
               </View>
@@ -344,7 +352,13 @@ const ShopOwnerHome = ({navigation}) => {
                   borderBottomLeftRadius: 15,
                   borderBottomRightRadius: 15,
                 }}>
-                <Text style={{color: Font.LabelColor, alignSelf: 'center'}}>
+                <Text
+                  style={{
+                    color: Font.LabelColor,
+                    alignSelf: 'center',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   View History
                 </Text>
                 <TouchableOpacity
@@ -376,11 +390,18 @@ const ShopOwnerHome = ({navigation}) => {
                     alignSelf: 'center',
                     color: Font.LabelColor,
                     marginTop: 10,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   {dataarray.length}
                 </Text>
                 <Text
-                  style={{alignSelf: 'center', color: '#979ea4', fontSize: 15}}>
+                  style={{
+                    alignSelf: 'center',
+                    color: '#979ea4',
+                    fontSize: 15,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   Total Products
                 </Text>
               </View>
@@ -391,7 +412,13 @@ const ShopOwnerHome = ({navigation}) => {
                   borderBottomLeftRadius: 15,
                   borderBottomRightRadius: 15,
                 }}>
-                <Text style={{color: 'white', alignSelf: 'center'}}>
+                <Text
+                  style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   View All
                 </Text>
                 <TouchableOpacity
@@ -423,11 +450,18 @@ const ShopOwnerHome = ({navigation}) => {
                     alignSelf: 'center',
                     color: Font.LabelColor,
                     marginTop: 10,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   {userdetails.earning}
                 </Text>
                 <Text
-                  style={{alignSelf: 'center', color: '#979ea4', fontSize: 15}}>
+                  style={{
+                    alignSelf: 'center',
+                    color: '#979ea4',
+                    fontSize: 15,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   Total Earning
                 </Text>
               </View>
@@ -438,7 +472,13 @@ const ShopOwnerHome = ({navigation}) => {
                   borderBottomLeftRadius: 15,
                   borderBottomRightRadius: 15,
                 }}>
-                <Text style={{color: 'white', alignSelf: 'center'}}>
+                <Text
+                  style={{
+                    color: 'white',
+                    alignSelf: 'center',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   View All
                 </Text>
                 <TouchableOpacity
@@ -508,6 +548,8 @@ const ShopOwnerHome = ({navigation}) => {
                 fontSize: 18,
                 marginBottom: 5,
                 color: Font.TextColor,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
               }}>
               Let's create a Shop first
             </Text>
@@ -523,7 +565,13 @@ const ShopOwnerHome = ({navigation}) => {
                 alignSelf: 'center',
                 // borderRadius: '50%',
               }}>
-              <Text style={{color: 'white', fontWeight: '500', fontSize: 16}}>
+              <Text
+                style={{
+                  color: 'white',
+                  fontWeight: '500',
+                  fontSize: 16,
+                  fontFamily: 'Lexend-Regular',
+                }}>
                 Create Shop
               </Text>
             </TouchableOpacity>
@@ -589,15 +637,18 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#979ea4',
     marginTop: 5,
+    fontFamily: 'Lexend-Regular',
   },
   text2: {
     fontSize: 20,
     fontWeight: '700',
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
   },
   text3: {
     fontSize: 16,
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
 
     fontWeight: '700',
   },
@@ -606,22 +657,28 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 10,
     color: '#f4f4f4',
+    fontFamily: 'Lexend-Regular',
   },
   text6: {
     fontSize: 18,
     fontWeight: 'bold',
     marginLeft: 8,
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
   },
   text5: {
     fontSize: 14,
     marginLeft: 10,
     color: '#f4f4f4',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   text7: {
     fontSize: 14,
     marginLeft: 10,
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   buttonstyle: {
     height: 150,
@@ -681,9 +738,12 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: 'Lexend-Regular',
   },
   modalText: {
     marginBottom: 15,
     textAlign: 'center',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

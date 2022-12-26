@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 import {SliderBox} from 'react-native-image-slider-box';
 import Lottie from 'lottie-react-native';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import axios from 'axios';
 import {Rating, AirbnbRating} from 'react-native-ratings';
 import CartProvider from '../ContextApi/contextApi';
@@ -195,6 +195,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                         color: Font.ButtonColor,
                         marginRight: 15,
                         fontWeight: '600',
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       Cancel
                     </Text>
@@ -235,7 +236,13 @@ const CustomerProductScreen = ({navigation, route}) => {
                         margin: 5,
                       }}>
                       <View>
-                        <Text style={{marginLeft: 3, color: 'grey'}}>
+                        <Text
+                          style={{
+                            marginLeft: 3,
+                            color: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           {route.params?.product.title}
                         </Text>
                         <Text
@@ -244,6 +251,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                             fontSize: 16,
                             fontWeight: '700',
                             color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
                           }}>
                           PKR {route.params?.product.price}
                         </Text>
@@ -251,6 +259,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                           style={{
                             marginLeft: 3,
                             color: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           {route.params?.product.place}
                         </Text>
@@ -259,6 +269,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                           style={{
                             marginLeft: 3,
                             color: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           {route.params?.product.category} |{' '}
                           {route.params?.product.subcategory}
@@ -280,6 +292,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                       marginTop: 5,
                       marginBottom: 5,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     More Photos
                   </Text>
@@ -324,6 +337,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                       fontSize: 18,
                       alignSelf: 'center',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Quantity
                   </Text>
@@ -346,6 +361,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                           fontWeight: 'bold',
                           color: '#8739F9',
                           marginLeft: 4,
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         -
                       </Text>
@@ -382,6 +398,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                           fontSize: 16,
                           fontWeight: 'bold',
                           color: '#8739F9',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         +
                       </Text>
@@ -401,7 +418,12 @@ const CustomerProductScreen = ({navigation, route}) => {
                     alignItems: 'center',
                   }}>
                   <Text
-                    style={{fontSize: 16, color: 'white', fontWeight: '700'}}>
+                    style={{
+                      fontSize: 16,
+                      color: 'white',
+                      fontWeight: '700',
+                      fontFamily: 'Lexend-Regular',
+                    }}>
                     Add to cart
                   </Text>
                 </TouchableOpacity>
@@ -435,6 +457,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                       fontSize: 0,
 
                       marginLeft: 45,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}></Text>
                   <Text style={styles.modalText2}>Select Quantity</Text>
 
@@ -445,6 +469,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                         color: Font.ButtonColor,
                         marginRight: 15,
                         fontWeight: '600',
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       Cancel
                     </Text>
@@ -485,7 +510,13 @@ const CustomerProductScreen = ({navigation, route}) => {
                         margin: 5,
                       }}>
                       <View>
-                        <Text style={{marginLeft: 3, color: 'grey'}}>
+                        <Text
+                          style={{
+                            marginLeft: 3,
+                            color: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           {route.params?.product.title}
                         </Text>
                         <Text
@@ -494,6 +525,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                             fontSize: 16,
                             fontWeight: '700',
                             color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
                           }}>
                           PKR {route.params?.product.price}
                         </Text>
@@ -501,6 +533,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                           style={{
                             marginLeft: 3,
                             color: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           {route.params?.product.place}
                         </Text>
@@ -509,6 +543,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                           style={{
                             marginLeft: 3,
                             color: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           {route.params?.product.category} |{' '}
                           {route.params?.product.subcategory}
@@ -530,6 +566,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                       marginTop: 5,
                       marginBottom: 5,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     More Photos
                   </Text>
@@ -574,6 +611,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                       fontSize: 18,
                       alignSelf: 'center',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Quantity
                   </Text>
@@ -596,6 +635,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                           fontWeight: 'bold',
                           color: '#8739F9',
                           marginLeft: 4,
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         -
                       </Text>
@@ -631,6 +671,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                           fontSize: 16,
                           fontWeight: 'bold',
                           color: '#8739F9',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         +
                       </Text>
@@ -654,7 +695,12 @@ const CustomerProductScreen = ({navigation, route}) => {
                     alignItems: 'center',
                   }}>
                   <Text
-                    style={{fontSize: 16, color: 'white', fontWeight: '700'}}>
+                    style={{
+                      fontSize: 16,
+                      color: 'white',
+                      fontWeight: '700',
+                      fontFamily: 'Lexend-Regular',
+                    }}>
                     Check out
                   </Text>
                 </TouchableOpacity>
@@ -673,6 +719,7 @@ const CustomerProductScreen = ({navigation, route}) => {
               fontSize: 18,
               fontWeight: '600',
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             {dataarray.title}
           </Text>
@@ -681,19 +728,54 @@ const CustomerProductScreen = ({navigation, route}) => {
               marginLeft: 10,
               fontSize: 18,
               marginBottom: 5,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
-            <Text style={{color: '#8739F9'}}>PKR </Text>
-            <Text style={{fontWeight: 'bold', color: Font.TextColor}}>
+            <Text
+              style={{
+                color: '#8739F9',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              PKR{' '}
+            </Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: Font.TextColor,
+                fontFamily: 'Lexend-Regular',
+              }}>
               {dataarray.price}
             </Text>
           </Text>
           {/* {dataarray.quantity} */}
 
-          <Text style={{marginLeft: 10, fontSize: 18, marginBottom: 5}}>
+          <Text
+            style={{
+              marginLeft: 10,
+              fontSize: 18,
+              marginBottom: 5,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
             {dataarray.quantity > 0 ? (
-              <Text style={{color: 'green'}}>In Stock</Text>
+              <Text
+                style={{
+                  color: 'green',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                In Stock
+              </Text>
             ) : (
-              <Text style={{color: 'red'}}>Out of Stock</Text>
+              <Text
+                style={{
+                  color: 'red',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                Out of Stock
+              </Text>
             )}
           </Text>
           <Text
@@ -702,6 +784,8 @@ const CustomerProductScreen = ({navigation, route}) => {
               fontSize: 18,
               marginBottom: 5,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             <FontAwesome5 name="map-marker-alt" size={20} color={'red'} />{' '}
             {dataarray.place}
@@ -728,10 +812,18 @@ const CustomerProductScreen = ({navigation, route}) => {
                 color: 'grey',
                 fontWeight: '300',
                 alignSelf: 'center',
+                fontFamily: 'Lexend-Regular',
               }}>
               Category
             </Text>
-            <Text style={{color: 'grey'}}>{dataarray.category}</Text>
+            <Text
+              style={{
+                color: 'grey',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {dataarray.category}
+            </Text>
           </View>
           <View
             style={{
@@ -752,10 +844,18 @@ const CustomerProductScreen = ({navigation, route}) => {
                 color: 'grey',
                 fontWeight: '300',
                 alignSelf: 'center',
+                fontFamily: 'Lexend-Regular',
               }}>
               Sub Category
             </Text>
-            <Text style={{color: 'grey'}}>{dataarray.subcategory}</Text>
+            <Text
+              style={{
+                color: 'grey',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {dataarray.subcategory}
+            </Text>
           </View>
           <View
             style={{
@@ -776,10 +876,18 @@ const CustomerProductScreen = ({navigation, route}) => {
               style={{
                 color: 'grey',
                 fontWeight: '300',
+                fontFamily: 'Lexend-Regular',
               }}>
               Uploaded Date
             </Text>
-            <Text style={{color: 'grey'}}>{dataarray.createdDate}</Text>
+            <Text
+              style={{
+                color: 'grey',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {dataarray.createdDate}
+            </Text>
           </View>
         </View>
 
@@ -790,10 +898,18 @@ const CustomerProductScreen = ({navigation, route}) => {
               fontSize: 20,
               fontWeight: 'bold',
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Seller Description
           </Text>
-          <Text style={{marginLeft: 10, marginTop: 10, color: Font.LightColor}}>
+          <Text
+            style={{
+              marginLeft: 10,
+              marginTop: 10,
+              color: Font.LightColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
             {dataarray.description}
           </Text>
         </View>
@@ -829,6 +945,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                 fontWeight: '700',
                 marginLeft: 10,
                 color: Font.LabelColor,
+                fontFamily: 'Lexend-Regular',
               }}>
               Fetching Data for You
             </Text>
@@ -841,6 +958,8 @@ const CustomerProductScreen = ({navigation, route}) => {
                 marginTop: 5,
                 fontSize: 16,
                 color: 'grey',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
               }}>
               No review yet
             </Text>
@@ -868,6 +987,7 @@ const CustomerProductScreen = ({navigation, route}) => {
                         fontSize: 15,
                         fontWeight: '600',
                         color: Font.TextColor,
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       {data.refOfUser.firstname} {data.refOfUser.lastname}
                     </Text>
@@ -880,7 +1000,13 @@ const CustomerProductScreen = ({navigation, route}) => {
                       isDisabled
                       showRating={false}
                     />
-                    <Text style={{marginLeft: 4, color: Font.TextColor}}>
+                    <Text
+                      style={{
+                        marginLeft: 4,
+                        color: Font.TextColor,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
+                      }}>
                       {data.createdAt}
                     </Text>
                   </View>
@@ -891,12 +1017,22 @@ const CustomerProductScreen = ({navigation, route}) => {
                         setnoOfLines(!noOfLines);
                       }}>
                       {noOfLines ? (
-                        <Text style={{color: Font.TextColor}} numberOfLines={3}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}
+                          numberOfLines={3}>
                           {data.review}
                         </Text>
                       ) : (
                         <Text
-                          style={{color: Font.TextColor}}
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}
                           numberOfLines={null}>
                           {data.review}
                         </Text>
@@ -911,7 +1047,12 @@ const CustomerProductScreen = ({navigation, route}) => {
               onPress={() => {
                 navigation.navigate('AllReviewScreen', {reviews: AllReview});
               }}>
-              <Text style={{color: Font.LabelColor, fontWeight: '700'}}>
+              <Text
+                style={{
+                  color: Font.LabelColor,
+                  fontWeight: '700',
+                  fontFamily: 'Lexend-Regular',
+                }}>
                 See all reviews
               </Text>
             </TouchableOpacity>
@@ -933,7 +1074,12 @@ const CustomerProductScreen = ({navigation, route}) => {
                     }}
                   />
                   <Text
-                    style={{marginLeft: 8, fontSize: 15, fontWeight: '600'}}>
+                    style={{
+                      marginLeft: 8,
+                      fontSize: 15,
+                      fontWeight: '600',
+                      fontFamily: 'Lexend-Regular',
+                    }}>
                     {data.refOfUser.firstname} {data.refOfUser.lastname}
                   </Text>
                 </View>
@@ -945,7 +1091,14 @@ const CustomerProductScreen = ({navigation, route}) => {
                     isDisabled
                     showRating={false}
                   />
-                  <Text style={{marginLeft: 4}}>{data.createdAt}</Text>
+                  <Text
+                    style={{
+                      marginLeft: 4,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
+                    {data.createdAt}
+                  </Text>
                 </View>
 
                 <View>
@@ -954,9 +1107,23 @@ const CustomerProductScreen = ({navigation, route}) => {
                       setnoOfLines(!noOfLines);
                     }}>
                     {noOfLines ? (
-                      <Text numberOfLines={3}>{data.review}</Text>
+                      <Text
+                        style={{
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}
+                        numberOfLines={3}>
+                        {data.review}
+                      </Text>
                     ) : (
-                      <Text numberOfLines={null}>{data.review}</Text>
+                      <Text
+                        style={{
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}
+                        numberOfLines={null}>
+                        {data.review}
+                      </Text>
                     )}
                   </TouchableOpacity>
                 </View>
@@ -972,6 +1139,7 @@ const CustomerProductScreen = ({navigation, route}) => {
               fontSize: 20,
               fontWeight: 'bold',
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Seller Information
           </Text>
@@ -995,14 +1163,29 @@ const CustomerProductScreen = ({navigation, route}) => {
               }}
             />
             <View style={{marginLeft: 10, justifyContent: 'center'}}>
-              <Text style={{color: Font.LightColor}}>
+              <Text
+                style={{
+                  color: Font.LightColor,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 {route.params?.product.refOfUser.firstname}{' '}
                 {route.params?.product.refOfUser.lastname}
               </Text>
-              <Text style={{color: Font.LightColor}}>
+              <Text
+                style={{
+                  color: Font.LightColor,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 Contact No. {route.params?.product.refOfUser.phonenumber}
               </Text>
-              <Text style={{color: Font.LightColor}}>
+              <Text
+                style={{
+                  color: Font.LightColor,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 Emal: {route.params?.product.refOfUser.email}
               </Text>
             </View>
@@ -1031,7 +1214,15 @@ const CustomerProductScreen = ({navigation, route}) => {
             borderRadius: 5,
             justifyContent: 'center',
           }}>
-          <Text style={{color: '#8739F9', fontWeight: 'bold'}}>Chat Now</Text>
+          <Text
+            style={{
+              color: '#8739F9',
+              fontWeight: 'bold',
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
+            Chat Now
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
@@ -1048,7 +1239,13 @@ const CustomerProductScreen = ({navigation, route}) => {
             borderRadius: 5,
             justifyContent: 'center',
           }}>
-          <Text style={{color: '#8739F9', fontWeight: 'bold'}}>
+          <Text
+            style={{
+              color: '#8739F9',
+              fontWeight: 'bold',
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
             Add to Cart
           </Text>
         </TouchableOpacity>
@@ -1070,7 +1267,15 @@ const CustomerProductScreen = ({navigation, route}) => {
               borderRadius: 5,
               justifyContent: 'center',
             }}>
-            <Text style={{fontWeight: 'bold', color: 'white'}}>Buy Now</Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Buy Now
+            </Text>
           </TouchableOpacity>
         </StripeProvider>
       </View>
@@ -1127,16 +1332,19 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: 'Lexend-Regular',
   },
   modalText: {
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
   modalText2: {
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
 });
 export default CustomerProductScreen;

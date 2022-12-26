@@ -9,7 +9,7 @@ import {
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import {StyleSheet} from 'react-native';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import axios from 'axios';
 import CartProvider from '../ContextApi/contextApi';
 import {Formik} from 'formik';
@@ -95,8 +95,17 @@ function SignUpCustomer({navigation, route}) {
             fontWeight: '700',
             marginTop: 40,
             color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
           }}>
-          {user} <Text style={{color: '#8739F9'}}>SignUp</Text>
+          {user}{' '}
+          <Text
+            style={{
+              color: '#8739F9',
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '700',
+            }}>
+            SignUp
+          </Text>
         </Text>
       </View>
 
@@ -131,6 +140,8 @@ function SignUpCustomer({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.firstname}
               </Text>
@@ -150,6 +161,8 @@ function SignUpCustomer({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.lastname}
               </Text>
@@ -172,6 +185,8 @@ function SignUpCustomer({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.email}
               </Text>
@@ -193,6 +208,8 @@ function SignUpCustomer({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.password}
               </Text>
@@ -214,6 +231,8 @@ function SignUpCustomer({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.confirmPassword}
               </Text>
@@ -234,6 +253,8 @@ function SignUpCustomer({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.PhoneNumber}
               </Text>
@@ -252,16 +273,36 @@ function SignUpCustomer({navigation, route}) {
                   marginTop: 10,
                 }}
                 onPress={handleSubmit}>
-                <Text style={{color: 'white', fontWeight: '500'}}>SignUp</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontWeight: '500',
+                    fontFamily: 'Lexend-Regular',
+                  }}>
+                  SignUp
+                </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={{marginBottom: 30}}
                 onPress={() => {
                   navigation.navigate('Login', {user: user});
                 }}>
-                <Text style={{color: Font.TextBackground}}>
+                <Text
+                  style={{
+                    color: Font.TextBackground,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   {'\n'} Already have an account?
-                  <Text style={{color: '#8739F9'}}> Login</Text>{' '}
+                  <Text
+                    style={{
+                      color: '#8739F9',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
+                    {' '}
+                    Login
+                  </Text>{' '}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -363,6 +404,8 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 7,
     color: 'black',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

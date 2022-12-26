@@ -21,7 +21,7 @@ import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import port from '../Port/Port';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import MapView, {Marker} from 'react-native-maps';
 
 const MechanicSelectingCustomer = ({navigation, route}) => {
@@ -195,7 +195,16 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
             onPress={() => {
               navigation.goBack();
             }}>
-            <Text style={{marginRight: 8, color: 'white'}}> Cancel</Text>
+            <Text
+              style={{
+                marginRight: 8,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {' '}
+              Cancel
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -248,7 +257,14 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               {address}
             </Text>
           </View>
@@ -259,9 +275,22 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               PKR{' '}
-              <Text style={{color: Font.ButtonColor, fontWeight: 'bold'}}>
+              <Text
+                style={{
+                  color: Font.ButtonColor,
+                  fontWeight: 'bold',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 {price}
               </Text>
               , cash
@@ -278,7 +307,15 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
 
               justifyContent: 'center',
             }}>
-            <Text style={{fontSize: 16, color: 'white'}}>Offer your fair</Text>
+            <Text
+              style={{
+                fontSize: 16,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Offer your fair
+            </Text>
           </View>
           {/* Increase or decrease money */}
           <View
@@ -311,9 +348,23 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
                     alert('Quantity Must be atleast 1');
                   }
                 }}>
-                <Text style={{color: 'white'}}>-5</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
+                  -5
+                </Text>
               </TouchableOpacity>
-              <Text style={{color: 'white'}}>PKR {price}</Text>
+              <Text
+                style={{
+                  color: 'white',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                PKR {price}
+              </Text>
 
               <TouchableOpacity
                 style={{
@@ -334,7 +385,14 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
                     alert('Quantity Must be atleast 1');
                   }
                 }}>
-                <Text style={{color: 'white'}}>+5</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
+                  +5
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -371,7 +429,14 @@ const MechanicSelectingCustomer = ({navigation, route}) => {
                 acceptRequest();
                 setButtonVisibilityCondition(true);
               }}>
-              <Text style={{color: 'white'}}>Accept for PKR{price}</Text>
+              <Text
+                style={{
+                  color: 'white',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                Accept for PKR{price}
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -387,5 +452,7 @@ const styles = StyleSheet.create({
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

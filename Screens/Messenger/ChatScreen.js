@@ -18,7 +18,7 @@ import CartProvider from '../ContextApi/contextApi';
 import Message from './message/Message';
 import Lottie from 'lottie-react-native';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 const ChatScreen = ({navigation, route}) => {
   var currentChat = route.params?.currentChat;
@@ -130,6 +130,7 @@ const ChatScreen = ({navigation, route}) => {
             fontWeight: '700',
             marginLeft: 10,
             color: Font.LabelColor,
+            fontFamily: 'Lexend-Regular',
           }}>
           Searching conversation for you
         </Text>
@@ -174,6 +175,7 @@ const ChatScreen = ({navigation, route}) => {
                     fontWeight: 'bold',
                     color: Font.TextColor,
                     marginLeft: 5,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   {' '}
                   {receiverUser?.firstname} {receiverUser?.lastname}
@@ -184,6 +186,8 @@ const ChatScreen = ({navigation, route}) => {
                     marginLeft: 4,
                     color: Font.LightColor,
                     marginLeft: 8,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   {receiverUser?.role}
                 </Text>

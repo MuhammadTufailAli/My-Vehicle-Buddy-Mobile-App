@@ -12,7 +12,7 @@ import {
   Alert,
 } from 'react-native';
 import React, {useState, useContext, useEffect} from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -148,6 +148,7 @@ const CartScreen = ({navigation}) => {
                 marginLeft: 10,
                 paddingBottom: 80,
                 color: Font.LabelColor,
+                fontFamily: 'Lexend-Regular',
               }}>
               Fetching Data for You
             </Text>
@@ -172,6 +173,7 @@ const CartScreen = ({navigation}) => {
                 fontWeight: '700',
                 marginLeft: 10,
                 color: Font.LabelColor,
+                fontFamily: 'Lexend-Regular',
               }}>
               No Product in cart Found :(
             </Text>
@@ -200,6 +202,8 @@ const CartScreen = ({navigation}) => {
                           fontSize: 0,
 
                           marginLeft: 45,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}></Text>
                       <Text style={styles.modalText2}>Edit Cart</Text>
 
@@ -211,6 +215,7 @@ const CartScreen = ({navigation}) => {
                             color: Font.ButtonColor,
                             marginRight: 15,
                             fontWeight: '600',
+                            fontFamily: 'Lexend-Regular',
                           }}>
                           Cancel
                         </Text>
@@ -251,7 +256,13 @@ const CartScreen = ({navigation}) => {
                             margin: 5,
                           }}>
                           <View>
-                            <Text style={{marginLeft: 3, color: 'grey'}}>
+                            <Text
+                              style={{
+                                marginLeft: 3,
+                                color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
+                              }}>
                               {selectedProduct?.title}
                             </Text>
                             <Text
@@ -260,6 +271,7 @@ const CartScreen = ({navigation}) => {
                                 fontSize: 16,
                                 fontWeight: '700',
                                 color: Font.TextColor,
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               PKR {selectedProduct.price}
                             </Text>
@@ -267,6 +279,8 @@ const CartScreen = ({navigation}) => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               {selectedProduct?.place}
                             </Text>
@@ -275,6 +289,8 @@ const CartScreen = ({navigation}) => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               {selectedProduct.category} |{' '}
                               {selectedProduct.subcategory}
@@ -296,6 +312,7 @@ const CartScreen = ({navigation}) => {
                           marginTop: 5,
                           marginBottom: 5,
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         More Photos
                       </Text>
@@ -340,6 +357,8 @@ const CartScreen = ({navigation}) => {
                           fontSize: 18,
                           alignSelf: 'center',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Quantity
                       </Text>
@@ -362,6 +381,7 @@ const CartScreen = ({navigation}) => {
                               fontWeight: 'bold',
                               color: '#8739F9',
                               marginLeft: 4,
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             -
                           </Text>
@@ -397,6 +417,7 @@ const CartScreen = ({navigation}) => {
                               fontSize: 16,
                               fontWeight: 'bold',
                               color: '#8739F9',
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             +
                           </Text>
@@ -421,6 +442,7 @@ const CartScreen = ({navigation}) => {
                           fontSize: 16,
                           color: 'white',
                           fontWeight: '700',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         Update Cart
                       </Text>
@@ -439,14 +461,26 @@ const CartScreen = ({navigation}) => {
                 justifyContent: 'space-between',
               }}>
               <View>
-                <Text style={{fontWeight: '600', fontSize: 15}}>
+                <Text
+                  style={{
+                    fontWeight: '600',
+                    fontSize: 15,
+                    fontFamily: 'Lexend-Regular',
+                  }}>
                   {array.length} Results
                 </Text>
               </View>
               <View style={{flexDirection: 'row'}}>
                 <TouchableOpacity
                   style={{flexDirection: 'row', marginRight: 15}}>
-                  <Text>Sort</Text>
+                  <Text
+                    style={{
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                      color: Font.TextColor,
+                    }}>
+                    Sort
+                  </Text>
                   <MaterialIcons
                     name={'sort'}
                     size={20}
@@ -456,7 +490,14 @@ const CartScreen = ({navigation}) => {
                 </TouchableOpacity>
                 <TouchableOpacity
                   style={{marginRight: 5, flexDirection: 'row'}}>
-                  <Text>Filter</Text>
+                  <Text
+                    style={{
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                      color: Font.TextColor,
+                    }}>
+                    Filter
+                  </Text>
                   <AntDesign
                     name={'filter'}
                     size={20}
@@ -518,7 +559,13 @@ const CartScreen = ({navigation}) => {
                               color={'white'}
                               style={{marginLeft: 3}}
                             />
-                            <Text style={{color: 'white', marginTop: -2.5}}>
+                            <Text
+                              style={{
+                                color: 'white',
+                                marginTop: -2.5,
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
+                              }}>
                               {item.refOfProduct?.imageUrl.length}
                             </Text>
                           </View>
@@ -541,7 +588,13 @@ const CartScreen = ({navigation}) => {
                                 flexDirection: 'row',
                                 justifyContent: 'space-between',
                               }}>
-                              <Text style={{marginLeft: 3, color: 'grey'}}>
+                              <Text
+                                style={{
+                                  marginLeft: 3,
+                                  color: 'grey',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
+                                }}>
                                 {item.refOfProduct?.title}
                               </Text>
                               <TouchableOpacity
@@ -549,7 +602,14 @@ const CartScreen = ({navigation}) => {
                                   setCondition(!condition);
                                   deletecartProduct(item._id);
                                 }}>
-                                <Text style={{color: 'red'}}>Delete</Text>
+                                <Text
+                                  style={{
+                                    color: 'red',
+                                    fontFamily: 'Lexend-Regular',
+                                    fontWeight: '400',
+                                  }}>
+                                  Delete
+                                </Text>
                               </TouchableOpacity>
                             </View>
                             <Text
@@ -558,6 +618,7 @@ const CartScreen = ({navigation}) => {
                                 fontSize: 16,
                                 fontWeight: '700',
                                 color: Font.TextColor,
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               PKR {item.refOfProduct?.price}
                             </Text>
@@ -565,6 +626,8 @@ const CartScreen = ({navigation}) => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               {item.refOfProduct?.place}
                             </Text>
@@ -573,6 +636,8 @@ const CartScreen = ({navigation}) => {
                               style={{
                                 marginLeft: 3,
                                 color: 'grey',
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               {item.refOfProduct?.category} |{' '}
                               {item.refOfProduct?.subcategory}
@@ -588,8 +653,9 @@ const CartScreen = ({navigation}) => {
                                   style={{
                                     color: Font.LabelColor,
                                     fontWeight: 'bold',
+                                    fontFamily: 'Lexend-Regular',
                                   }}>
-                                  {item.quantity}
+                                  {item?.quantity}
                                 </Text>
                               </Text>
                             </View>
@@ -610,7 +676,14 @@ const CartScreen = ({navigation}) => {
                                 borderRadius: 5,
                                 alignItems: 'center',
                               }}>
-                              <Text style={{color: 'white'}}>Edit</Text>
+                              <Text
+                                style={{
+                                  color: 'white',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
+                                }}>
+                                Edit
+                              </Text>
                             </TouchableOpacity>
                           </View>
                         </TouchableOpacity>
@@ -635,6 +708,8 @@ const styles = StyleSheet.create({
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   modalView2: {
     marginTop: 10,
@@ -657,5 +732,6 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 18,
     fontWeight: 'bold',
+    fontFamily: 'Lexend-Regular',
   },
 });

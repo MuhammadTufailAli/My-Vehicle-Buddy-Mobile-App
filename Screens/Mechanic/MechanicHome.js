@@ -16,7 +16,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import Geocoder from 'react-native-geocoding';
 import MapView, {Marker} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import {Table, Row, Rows} from 'react-native-table-component';
 import port from '../Port/Port';
 import CartProvider from '../ContextApi/contextApi';
@@ -258,6 +258,7 @@ const MechanicHome = ({navigation}) => {
             marginLeft: 10,
             paddingBottom: 80,
             color: Font.LabelColor,
+            fontFamily: 'Lexend-Regular',
           }}>
           Fetching Data for You....
         </Text>
@@ -298,6 +299,8 @@ const MechanicHome = ({navigation}) => {
                     paddingBottom: 8,
                     borderBottomWidth: 0.8,
                     borderColor: 'grey',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   Delete
                 </Text>
@@ -345,7 +348,13 @@ const MechanicHome = ({navigation}) => {
               borderTopLeftRadius: 20,
               borderTopRightRadius: 20,
             }}>
-            <Text style={{color: 'white', fontWeight: 'bold', fontSize: 18}}>
+            <Text
+              style={{
+                color: 'white',
+                fontWeight: 'bold',
+                fontSize: 18,
+                fontFamily: 'Lexend-Regular',
+              }}>
               Request From User
             </Text>
           </View>
@@ -376,6 +385,7 @@ const MechanicHome = ({navigation}) => {
                     marginLeft: 10,
                     paddingBottom: 80,
                     color: Font.LabelColor,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   Fetching Data for You....
                 </Text>
@@ -400,6 +410,7 @@ const MechanicHome = ({navigation}) => {
                     fontWeight: '700',
                     marginLeft: 10,
                     color: Font.LabelColor,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   No Request Yet :(
                 </Text>
@@ -466,11 +477,18 @@ const MechanicHome = ({navigation}) => {
                                 color: 'white',
                                 fontSize: 16,
                                 fontWeight: '700',
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               {item?.refOfCustomer?.firstname}{' '}
                               {item?.refOfCustomer?.lastname}
                             </Text>
-                            <Text style={{color: 'grey', fontSize: 12}}>
+                            <Text
+                              style={{
+                                color: 'grey',
+                                fontSize: 12,
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
+                              }}>
                               {Math.round(
                                 (Date.now() - item?.createdAt) / 60000,
                               )}{' '}
@@ -489,6 +507,7 @@ const MechanicHome = ({navigation}) => {
                                 color: 'white',
                                 fontSize: 20,
                                 fontWeight: '600',
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               {item?.Description}
                             </Text>
@@ -497,6 +516,8 @@ const MechanicHome = ({navigation}) => {
                               style={{
                                 color: 'white',
                                 fontSize: 16,
+                                fontFamily: 'Lexend-Regular',
+                                fontWeight: '400',
                               }}>
                               {item?.Location}
                             </Text>
@@ -505,9 +526,15 @@ const MechanicHome = ({navigation}) => {
                                 fontSize: 16,
                                 color: Font.ButtonColor,
                                 fontWeight: '500',
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               PKR{item?.price}
-                              <Text style={{color: 'grey'}}>
+                              <Text
+                                style={{
+                                  color: 'grey',
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
+                                }}>
                                 {' '}
                                 ~{' '}
                                 {item?.latitude
@@ -689,10 +716,12 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 2,
     marginBottom: 2,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   row: {height: 40, backgroundColor: '#E7E6E1'},
   head: {height: 40, backgroundColor: '#f1f8ff'},
-  text: {margin: 6},
+  text: {margin: 6, fontFamily: 'Lexend-Regular', fontWeight: '400'},
   modalView: {
     width: '96%',
     height: '15%',

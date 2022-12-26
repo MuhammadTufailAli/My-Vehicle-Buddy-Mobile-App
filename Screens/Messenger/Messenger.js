@@ -15,7 +15,7 @@ import CartProvider from '../ContextApi/contextApi';
 import Conversation from './conversation/Conversation';
 import ChatOnline from './chatOnline/ChatOnline';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 const Messenger = ({navigation}) => {
@@ -98,7 +98,13 @@ const Messenger = ({navigation}) => {
           }}>
           <AntDesign name={'left'} size={20} color={'white'} />
         </TouchableOpacity>
-        <Text style={{fontWeight: 'bold', color: 'white', fontSize: 18}}>
+        <Text
+          style={{
+            fontWeight: 'bold',
+            color: 'white',
+            fontSize: 18,
+            fontFamily: 'Lexend-Regular',
+          }}>
           Chats
         </Text>
         <Image
@@ -179,6 +185,7 @@ const Messenger = ({navigation}) => {
               fontWeight: '700',
               marginLeft: 10,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Searching conversation for you
           </Text>
@@ -203,6 +210,7 @@ const Messenger = ({navigation}) => {
               fontWeight: '700',
               marginLeft: 10,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             No Conversation Found :(
           </Text>
@@ -227,6 +235,8 @@ const Messenger = ({navigation}) => {
                   alignSelf: 'center',
                   marginTop: -30,
                   fontSize: 14,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
 
                   color: Font.LabelColor,
                 }}>

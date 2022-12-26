@@ -19,7 +19,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import axios from 'axios';
 import Lottie from 'lottie-react-native';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 export default function CustomerVehicleBuy({navigation}) {
   const [getcondition, setcondition] = useState(true);
@@ -133,6 +133,7 @@ export default function CustomerVehicleBuy({navigation}) {
               fontWeight: '700',
               marginLeft: 10,
               color: 'white',
+              fontFamily: 'Lexend-Regular',
             }}>
             Fetching Data for You
           </Text>
@@ -158,6 +159,7 @@ export default function CustomerVehicleBuy({navigation}) {
               marginLeft: 10,
               color: 'white',
               textAlign: 'center',
+              fontFamily: 'Lexend-Regular',
             }}>
             You haven't Posted any Product Yet :(
           </Text>
@@ -209,6 +211,8 @@ export default function CustomerVehicleBuy({navigation}) {
                             color: 'white',
                             fontSize: 18,
                             fontWeight: 'bold',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           +
                         </Text>
@@ -274,11 +278,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 9,
     marginLeft: 9,
+    fontFamily: 'Lexend-Regular',
   },
   prdtext2: {
     fontSize: 12,
     marginTop: 9,
     marginLeft: 9,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   header: {
     marginTop: 30,
@@ -290,5 +297,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     marginRight: 40,
+    fontFamily: 'Lexend-Regular',
   },
 });

@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 import port from '../Port/Port';
 import axios from 'axios';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 import DropDownPicker from 'react-native-dropdown-picker';
@@ -215,7 +215,13 @@ export default function CustomerPrediction({navigation}) {
         <Modal animationType="fade" visible={getmodalvisible}>
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-              <Text style={{textAlign: 'center', color: Font.TextColor}}>
+              <Text
+                style={{
+                  textAlign: 'center',
+                  color: Font.TextColor,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 Your Predicted Price: {getres} Lac Rs
               </Text>
               <View>
@@ -252,6 +258,7 @@ export default function CustomerPrediction({navigation}) {
                       color: 'white',
                       fontSize: 13,
                       fontWeight: 'bold',
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     Do you want to sell it?
                   </Text>
@@ -277,6 +284,7 @@ export default function CustomerPrediction({navigation}) {
                       color: 'white',
                       fontSize: 13,
                       fontWeight: 'bold',
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     Go back
                   </Text>
@@ -318,6 +326,7 @@ export default function CustomerPrediction({navigation}) {
               fontWeight: 'bold',
               marginLeft: 20,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Welcome to Car Sale & Buy.
           </Text>
@@ -328,6 +337,8 @@ export default function CustomerPrediction({navigation}) {
               marginRight: 100,
               marginLeft: 20,
               color: 'grey',
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Please fill out the following form to predict your vehicle price.
           </Text>
@@ -613,6 +624,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: 'white',
+    fontFamily: 'Lexend-Regular',
   },
   inputStyle: {
     flex: 1,
@@ -655,6 +667,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 14,
     padding: 0,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   SectionStyle: {
     flexDirection: 'row',

@@ -9,7 +9,7 @@ import {
 import port from '../Port/Port';
 import axios from 'axios';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 const DeleteShop = ({navigation}) => {
   const {userdetails, setuserdetails} = useContext(CartProvider);
@@ -86,6 +86,7 @@ const DeleteShop = ({navigation}) => {
             fontWeight: '800',
             marginTop: 40,
             color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
           }}>
           Delete Shop
         </Text>
@@ -122,7 +123,14 @@ const DeleteShop = ({navigation}) => {
             // borderRadius: '50%',
             margin: 10,
           }}>
-          <Text style={{color: 'white', fontWeight: '500'}}>Delete Shop</Text>
+          <Text
+            style={{
+              color: 'white',
+              fontWeight: '500',
+              fontFamily: 'Lexend-Regular',
+            }}>
+            Delete Shop
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
@@ -143,6 +151,8 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginRight: 20,
     marginTop: 10,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

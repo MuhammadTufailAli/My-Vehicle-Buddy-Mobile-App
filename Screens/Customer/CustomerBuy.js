@@ -19,7 +19,7 @@ import port from '../Port/Port';
 import axios from 'axios';
 
 import Loader from '../Loader/Loader';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 
 function CustomerBuy({navigation}) {
@@ -106,7 +106,9 @@ function CustomerBuy({navigation}) {
               marginBottom: 15,
               marginTop: -6,
               color: 'white',
-              fontWeight: '700',
+
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             MY VEHICEL BUD
             <Text
@@ -114,6 +116,7 @@ function CustomerBuy({navigation}) {
                 color: Font.LabelColor,
                 fontWeight: '700',
                 fontSize: 18,
+                fontFamily: 'Lexend-Regular',
               }}>
               D
             </Text>
@@ -148,6 +151,8 @@ function CustomerBuy({navigation}) {
                 marginTop: 15,
                 marginLeft: 10,
                 color: Font.TextColor,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '700',
               }}>
               Browse Auto Parts & Accessories
             </Text>
@@ -171,6 +176,8 @@ function CustomerBuy({navigation}) {
                     fontWeight: font1,
                     borderBottomWidth: w1,
                     borderColor: color1,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   Category
                 </Text>
@@ -195,6 +202,8 @@ function CustomerBuy({navigation}) {
                     fontWeight: font2,
                     borderBottomWidth: w2,
                     borderColor: color2,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   Location
                 </Text>
@@ -221,6 +230,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Islamabad
                       </Text>
@@ -241,6 +252,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Lahore
                       </Text>
@@ -261,6 +274,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Faisalabad
                       </Text>
@@ -281,6 +296,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Karachi
                       </Text>
@@ -303,6 +320,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Rawalpindi
                       </Text>
@@ -323,6 +342,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Multan
                       </Text>
@@ -343,6 +364,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Peshawar
                       </Text>
@@ -363,6 +386,8 @@ function CustomerBuy({navigation}) {
                           marginTop: 5,
                           fontWeight: 'bold',
                           color: Font.TextColor,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Quetta
                       </Text>
@@ -388,7 +413,12 @@ function CustomerBuy({navigation}) {
                           color={Font.TextColor}
                         />
 
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Engine & Mechanical
                         </Text>
                       </TouchableOpacity>
@@ -405,7 +435,14 @@ function CustomerBuy({navigation}) {
                           color={Font.TextColor}
                         />
 
-                        <Text style={{color: Font.TextColor}}>Brakes</Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          Brakes
+                        </Text>
                       </TouchableOpacity>
                       <TouchableOpacity
                         style={styles.category}
@@ -419,7 +456,15 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}> Car Care</Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          {' '}
+                          Car Care
+                        </Text>
                       </TouchableOpacity>
                       <TouchableOpacity
                         style={styles.category}
@@ -435,7 +480,15 @@ function CustomerBuy({navigation}) {
                           style={{marginLeft: 10}}
                         />
 
-                        <Text style={{color: Font.TextColor}}> Interior</Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          {' '}
+                          Interior
+                        </Text>
                       </TouchableOpacity>
                     </View>
                     <View style={{flexDirection: 'row'}}>
@@ -451,7 +504,14 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>Exterior</Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          Exterior
+                        </Text>
                       </TouchableOpacity>
                       <TouchableOpacity
                         style={styles.category}
@@ -465,7 +525,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Lights & Electrical
                         </Text>
                       </TouchableOpacity>
@@ -481,7 +546,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Tyre & Wheels
                         </Text>
                       </TouchableOpacity>
@@ -497,7 +567,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Audio / Video
                         </Text>
                       </TouchableOpacity>
@@ -517,8 +592,20 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
-                          <Text style={{color: Font.TextColor}}>{'    '} </Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          <Text
+                            style={{
+                              color: Font.TextColor,
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
+                            }}>
+                            {'    '}{' '}
+                          </Text>
                           Oil & Lubricants
                         </Text>
                       </TouchableOpacity>
@@ -534,7 +621,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Tools & Gadgets
                         </Text>
                       </TouchableOpacity>
@@ -550,7 +642,14 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>Bikes</Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          Bikes
+                        </Text>
                       </TouchableOpacity>
                       <TouchableOpacity
                         style={styles.category}
@@ -564,7 +663,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Security & Sensors
                         </Text>
                       </TouchableOpacity>
@@ -582,7 +686,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Other Vehicles
                         </Text>
                       </TouchableOpacity>
@@ -598,7 +707,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Exhaust & Parts
                         </Text>
                       </TouchableOpacity>
@@ -614,7 +728,12 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
                           Car utilities
                         </Text>
                       </TouchableOpacity>
@@ -630,7 +749,14 @@ function CustomerBuy({navigation}) {
                           size={28}
                           color={Font.TextColor}
                         />
-                        <Text style={{color: Font.TextColor}}>Bicycle</Text>
+                        <Text
+                          style={{
+                            color: Font.TextColor,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
+                          }}>
+                          Bicycle
+                        </Text>
                       </TouchableOpacity>
                     </View>
                   </View>

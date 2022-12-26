@@ -9,7 +9,7 @@ import {
 import Geocoder from 'react-native-geocoding';
 import MapView, {Marker} from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import port from '../Port/Port';
 import Lottie from 'lottie-react-native';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
@@ -169,7 +169,13 @@ const CustomerMechanic = ({navigation}) => {
               borderTopLeftRadius: 20,
               borderTopRightRadius: 20,
             }}>
-            <Text style={{color: 'white', fontWeight: 'bold', fontSize: 18}}>
+            <Text
+              style={{
+                color: 'white',
+                fontWeight: 'bold',
+                fontSize: 18,
+                fontFamily: 'Lexend-Regular',
+              }}>
               Book Vehicle Mechanic
             </Text>
           </View>
@@ -181,7 +187,15 @@ const CustomerMechanic = ({navigation}) => {
                 alignItems: 'center',
                 flex: 1,
               }}>
-              <Text style={{color: 'grey', flex: 1}}>Location</Text>
+              <Text
+                style={{
+                  color: 'grey',
+                  flex: 1,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                Location
+              </Text>
               <TextInput
                 style={styles.inputText}
                 multiline={true}
@@ -197,7 +211,15 @@ const CustomerMechanic = ({navigation}) => {
                 alignItems: 'center',
                 flex: 1,
               }}>
-              <Text style={{color: 'grey', flex: 1}}>Price</Text>
+              <Text
+                style={{
+                  color: 'grey',
+                  flex: 1,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                Price
+              </Text>
               <TextInput
                 style={styles.inputText}
                 placeholder="Price"
@@ -220,7 +242,15 @@ const CustomerMechanic = ({navigation}) => {
                 alignItems: 'center',
                 flex: 1,
               }}>
-              <Text style={{color: 'grey', flex: 1}}>Description</Text>
+              <Text
+                style={{
+                  color: 'grey',
+                  flex: 1,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                Description
+              </Text>
               <TextInput
                 style={styles.inputText}
                 placeholder="Description"
@@ -249,7 +279,12 @@ const CustomerMechanic = ({navigation}) => {
                   FindMechanic();
                 }
               }}>
-              <Text style={{color: 'white', fontWeight: '500'}}>
+              <Text
+                style={{
+                  color: 'white',
+                  fontWeight: '500',
+                  fontFamily: 'Lexend-Regular',
+                }}>
                 Find Mechanic
               </Text>
             </TouchableOpacity>
@@ -272,5 +307,7 @@ const styles = StyleSheet.create({
     marginBottom: 2,
     color: 'grey',
     flex: 4,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

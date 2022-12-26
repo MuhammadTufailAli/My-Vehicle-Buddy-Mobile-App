@@ -11,7 +11,7 @@ import {StyleSheet} from 'react-native';
 import axios from 'axios';
 import CartProvider from '../ContextApi/contextApi';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 function ShopOwnerEnterShop({navigation}) {
   const {userdetails, setuserdetails} = useContext(CartProvider);
@@ -80,6 +80,7 @@ function ShopOwnerEnterShop({navigation}) {
               fontWeight: '700',
               marginTop: 40,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Create Shop
           </Text>
@@ -154,7 +155,14 @@ function ShopOwnerEnterShop({navigation}) {
               // borderRadius: '50%',
               marginTop: 10,
             }}>
-            <Text style={{color: 'white', fontWeight: '500'}}>Create</Text>
+            <Text
+              style={{
+                color: 'white',
+                fontWeight: '500',
+                fontFamily: 'Lexend-Regular',
+              }}>
+              Create
+            </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -174,5 +182,7 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 7,
     color: Font.TextColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

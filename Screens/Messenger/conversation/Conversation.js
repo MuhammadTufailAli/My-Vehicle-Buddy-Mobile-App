@@ -87,6 +87,7 @@ function Conversation({conversation, currentUser, AllUsers}) {
                 fontWeight: 'bold',
                 fontSize: 18,
                 color: Font.TextColor,
+                fontFamily: 'Lexend-Regular',
               }}>
               {user[0]?.firstname} {user[0]?.lastname}
             </Text>
@@ -96,6 +97,8 @@ function Conversation({conversation, currentUser, AllUsers}) {
                 marginLeft: 5,
                 color: 'grey',
                 fontSize: 14,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
               }}>
               Message:{' '}
               {conversation?.lastMessage?.length < 33

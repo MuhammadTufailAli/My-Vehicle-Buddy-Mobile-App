@@ -20,7 +20,7 @@ import axios from 'axios';
 import CartProvider from '../ContextApi/contextApi';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 const Drawer = createDrawerNavigator();
 
@@ -30,12 +30,32 @@ const ShopOwnerProfile = ({navigation}) => {
     return (
       <View>
         <View style={{alignItems: 'center', margin: 10}}>
-          <Text style={{fontSize: 26, color: Font.TextColor}}>
-            <Text style={{color: '#8739F9'}}>Welcome </Text>
+          <Text
+            style={{
+              fontSize: 26,
+              color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
+            }}>
+            <Text
+              style={{
+                color: '#8739F9',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Welcome{' '}
+            </Text>
             {userdetails?.firstname} {userdetails?.lastname}
           </Text>
         </View>
-        <Text style={{fontSize: 16, marginLeft: 10, color: Font.TextColor}}>
+        <Text
+          style={{
+            fontSize: 16,
+            marginLeft: 10,
+            color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
+          }}>
           We are glad to see you here.
         </Text>
         <Text
@@ -44,6 +64,8 @@ const ShopOwnerProfile = ({navigation}) => {
             marginLeft: 10,
             marginBottom: 20,
             color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           You can not post an Ad untill you create a shop.
         </Text>
@@ -71,7 +93,13 @@ const ShopOwnerProfile = ({navigation}) => {
 
             marginTop: -40,
           }}>
-          <Text style={{color: 'white', fontWeight: '500', fontSize: 16}}>
+          <Text
+            style={{
+              color: 'white',
+              fontWeight: '500',
+              fontSize: 16,
+              fontFamily: 'Lexend-Regular',
+            }}>
             Create Shop
           </Text>
         </TouchableOpacity>
@@ -95,7 +123,14 @@ const ShopOwnerProfile = ({navigation}) => {
             alignItems: 'center',
             borderColor: 'white',
           }}>
-          <Text style={{fontWeight: 'bold', color: 'white'}}>Logout</Text>
+          <Text
+            style={{
+              fontWeight: 'bold',
+              color: 'white',
+              fontFamily: 'Lexend-Regular',
+            }}>
+            Logout
+          </Text>
         </TouchableOpacity>
       </View>
     );

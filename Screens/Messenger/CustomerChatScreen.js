@@ -18,7 +18,7 @@ import CartProvider from '../ContextApi/contextApi';
 import Message from './message/Message';
 import Lottie from 'lottie-react-native';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 const CustomerChatScreen = ({navigation, route}) => {
   var currentChat = route.params?.currentChat;
@@ -140,6 +140,7 @@ const CustomerChatScreen = ({navigation, route}) => {
             fontWeight: '700',
             marginLeft: 10,
             color: Font.LabelColor,
+            fontFamily: 'Lexend-Regular',
           }}>
           Searching conversation for you
         </Text>
@@ -183,6 +184,7 @@ const CustomerChatScreen = ({navigation, route}) => {
                     marginTop: 10,
                     fontWeight: 'bold',
                     color: Font.TextColor,
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   {' '}
                   {receiverUser?.firstname} {receiverUser?.lastname}
@@ -192,6 +194,8 @@ const CustomerChatScreen = ({navigation, route}) => {
                     marginTop: -5,
                     marginLeft: 4,
                     color: Font.LightColor,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   {receiverUser?.role}
                 </Text>
@@ -262,7 +266,9 @@ const CustomerChatScreen = ({navigation, route}) => {
             </View>
           </View>
         ) : (
-          <Text>Open a conversation to start a chat</Text>
+          <Text style={{fontFamily: 'Lexend-Regular', fontWeight: '400'}}>
+            Open a conversation to start a chat
+          </Text>
         )}
       </View>
     );

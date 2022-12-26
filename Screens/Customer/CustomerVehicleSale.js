@@ -21,7 +21,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import CartProvider from '../ContextApi/contextApi';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 const CustomerVehicleSale = ({navigation, route}) => {
   // var arr = AsyncStorage.getItem('@store1:key');
   var {ar} = route.params;
@@ -192,6 +192,8 @@ const CustomerVehicleSale = ({navigation, route}) => {
                   paddingBottom: 8,
                   borderBottomWidth: 0.8,
                   borderColor: 'grey',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 Delete
               </Text>
@@ -268,6 +270,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Name}
                   </Text>
@@ -303,6 +306,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Price}
                   </Text>
@@ -338,6 +342,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Model_Year}
                   </Text>
@@ -380,6 +385,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Engine_Type}
                   </Text>
@@ -415,6 +421,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Transmission}
                   </Text>
@@ -450,6 +457,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Color}
                   </Text>
@@ -492,6 +500,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Assembly}
                   </Text>
@@ -527,6 +536,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Body_Type}
                   </Text>
@@ -562,6 +572,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Mileage}
                   </Text>
@@ -603,6 +614,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.City}
                   </Text>
@@ -638,6 +650,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Capacity}
                   </Text>
@@ -673,6 +686,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                       fontWeight: 'bold',
                       marginLeft: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item?.Features}
                   </Text>
@@ -691,6 +705,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
             marginTop: 20,
             fontWeight: 'bold',
             color: '#829460',
+            fontFamily: 'Lexend-Regular',
           }}>
           Enter Your Details
         </Text>
@@ -751,6 +766,8 @@ const CustomerVehicleSale = ({navigation, route}) => {
                 marginTop: 4,
                 borderBottomWidth: 0.6,
                 borderColor: 'grey',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
               }}>
               {images.length} Photos
             </Text>
@@ -768,11 +785,20 @@ const CustomerVehicleSale = ({navigation, route}) => {
                     padding: 5,
                     fontSize: 15,
                     fontWeight: '700',
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   Add More Photo
                 </Text>
               </TouchableOpacity>
-              <Text style={{fontSize: 18, marginTop: 1}}>|</Text>
+              <Text
+                style={{
+                  fontSize: 18,
+                  marginTop: 1,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                |
+              </Text>
               <TouchableOpacity
                 onPress={() => {
                   setImages([]);
@@ -785,6 +811,7 @@ const CustomerVehicleSale = ({navigation, route}) => {
                     padding: 5,
                     fontSize: 15,
                     fontWeight: '700',
+                    fontFamily: 'Lexend-Regular',
                   }}>
                   Delete All Photos
                 </Text>
@@ -889,6 +916,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     color: 'white',
+    fontFamily: 'Lexend-Regular',
   },
   inputStyle: {
     flex: 1,
@@ -916,6 +944,8 @@ const styles = StyleSheet.create({
   buttontext: {
     color: 'white',
     fontSize: 14,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
     padding: 0,
   },
   SectionStyle: {
@@ -956,5 +986,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     fontSize: 18,
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

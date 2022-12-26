@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import port from '../Port/Port';
 import React, {useState, useContext, useEffect} from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -78,6 +78,7 @@ const AdminNotification = () => {
               marginLeft: 10,
               paddingBottom: 80,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Fetching Data for You
           </Text>
@@ -102,6 +103,7 @@ const AdminNotification = () => {
               fontWeight: '700',
               marginLeft: 10,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             No Notification Yet :(
           </Text>
@@ -124,6 +126,7 @@ const AdminNotification = () => {
                   fontWeight: '600',
                   fontSize: 15,
                   color: Font.TextBackground,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 {array.length} Results
               </Text>
@@ -151,7 +154,13 @@ const AdminNotification = () => {
           </View>
 
           <View style={{margin: 10}}>
-            <Text style={{fontSize: 20, color: 'black', fontWeight: 'bold'}}>
+            <Text
+              style={{
+                fontSize: 20,
+                color: 'black',
+                fontWeight: 'bold',
+                fontFamily: 'Lexend-Regular',
+              }}>
               Admin Notifications
             </Text>
           </View>
@@ -221,6 +230,7 @@ const AdminNotification = () => {
                                 fontSize: 16,
                                 fontWeight: '700',
                                 color: Font.TextBackground,
+                                fontFamily: 'Lexend-Regular',
                               }}>
                               {item?.adminName}
                             </Text>
@@ -231,6 +241,8 @@ const AdminNotification = () => {
                               marginLeft: 3,
 
                               color: Font.LightColor,
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
                             }}>
                             {item?.warning}
                           </Text>

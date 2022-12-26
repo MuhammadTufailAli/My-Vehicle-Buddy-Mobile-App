@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -95,6 +95,7 @@ const CustomerProductList = ({navigation, route}) => {
               marginLeft: 10,
               paddingBottom: 80,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Fetching Data for You
           </Text>
@@ -111,13 +112,25 @@ const CustomerProductList = ({navigation, route}) => {
               justifyContent: 'space-between',
             }}>
             <View>
-              <Text style={{fontWeight: '600', fontSize: 15}}>
+              <Text
+                style={{
+                  fontWeight: '600',
+                  fontSize: 15,
+                  fontFamily: 'Lexend-Regular',
+                }}>
                 {array.length} Results
               </Text>
             </View>
             <View style={{flexDirection: 'row'}}>
               <TouchableOpacity style={{flexDirection: 'row', marginRight: 15}}>
-                <Text>Sort</Text>
+                <Text
+                  style={{
+                    fontWeight: '600',
+                    fontSize: 15,
+                    fontFamily: 'Lexend-Regular',
+                  }}>
+                  Sort
+                </Text>
                 <MaterialIcons
                   name={'sort'}
                   size={20}
@@ -126,7 +139,14 @@ const CustomerProductList = ({navigation, route}) => {
                 />
               </TouchableOpacity>
               <TouchableOpacity style={{marginRight: 5, flexDirection: 'row'}}>
-                <Text>Filter</Text>
+                <Text
+                  style={{
+                    fontWeight: '600',
+                    fontSize: 15,
+                    fontFamily: 'Lexend-Regular',
+                  }}>
+                  Filter
+                </Text>
                 <AntDesign
                   name={'filter'}
                   size={20}
@@ -188,7 +208,13 @@ const CustomerProductList = ({navigation, route}) => {
                             color={'white'}
                             style={{marginLeft: 3}}
                           />
-                          <Text style={{color: 'white', marginTop: -2.5}}>
+                          <Text
+                            style={{
+                              color: 'white',
+                              marginTop: -2.5,
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
+                            }}>
                             {item.imageUrl.length}
                           </Text>
                         </View>
@@ -206,7 +232,13 @@ const CustomerProductList = ({navigation, route}) => {
                           });
                         }}>
                         <View>
-                          <Text style={{marginLeft: 3, color: 'grey'}}>
+                          <Text
+                            style={{
+                              marginLeft: 3,
+                              color: 'grey',
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
+                            }}>
                             {item.title}
                           </Text>
                           <Text
@@ -215,6 +247,7 @@ const CustomerProductList = ({navigation, route}) => {
                               fontSize: 16,
                               fontWeight: '700',
                               color: Font.ButtonColor,
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             PKR {item.price}
                           </Text>
@@ -222,6 +255,8 @@ const CustomerProductList = ({navigation, route}) => {
                             style={{
                               marginLeft: 3,
                               color: 'grey',
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
                             }}>
                             {item.place}
                           </Text>
@@ -230,6 +265,8 @@ const CustomerProductList = ({navigation, route}) => {
                             style={{
                               marginLeft: 3,
                               color: 'grey',
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
                             }}>
                             {item.category} | {item.subcategory}
                           </Text>
@@ -252,6 +289,8 @@ const CustomerProductList = ({navigation, route}) => {
                                   fontSize: 13,
                                   color: 'grey',
                                   marginLeft: 2,
+                                  fontFamily: 'Lexend-Regular',
+                                  fontWeight: '400',
                                 }}>
                                 {item.ratingsAverage}/5 ({item.ratingQuantity})
                               </Text>

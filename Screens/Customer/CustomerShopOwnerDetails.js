@@ -10,7 +10,7 @@ import {StyleSheet} from 'react-native';
 import port from '../Port/Port';
 import axios from 'axios';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
 function CustomerShopOwnerDetails({navigation, route}) {
@@ -39,13 +39,20 @@ function CustomerShopOwnerDetails({navigation, route}) {
             color: 'white',
             fontWeight: '700',
             marginLeft: 132,
+            fontFamily: 'Lexend-Regular',
           }}>
           Shop Details
         </Text>
       </View>
 
       <View style={{alignItems: 'center', marginTop: -25}}>
-        <Text style={{fontSize: 20, fontWeight: '700', marginTop: 40}}>
+        <Text
+          style={{
+            fontSize: 20,
+            fontWeight: '700',
+            marginTop: 40,
+            fontFamily: 'Lexend-Regular',
+          }}>
           MY VEHICLE BUDDY
         </Text>
       </View>
@@ -81,7 +88,14 @@ function CustomerShopOwnerDetails({navigation, route}) {
             // borderRadius: '50%',
             marginTop: 10,
           }}>
-          <Text style={{color: 'white', fontWeight: '500'}}>Back</Text>
+          <Text
+            style={{
+              color: 'white',
+              fontWeight: '500',
+              fontFamily: 'Lexend-Regular',
+            }}>
+            Back
+          </Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -101,5 +115,6 @@ const styles = StyleSheet.create({
     marginTop: 7,
     fontSize: 18,
     fontWeight: '700',
+    fontFamily: 'Lexend-Regular',
   },
 });

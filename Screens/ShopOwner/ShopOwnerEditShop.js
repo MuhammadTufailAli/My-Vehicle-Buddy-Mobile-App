@@ -62,7 +62,13 @@ function ShopOwnerEditShop({navigation}) {
     <View>
       <ScrollView>
         <View style={{alignItems: 'center', marginTop: 50}}>
-          <Text style={{fontSize: 20, fontWeight: '700', marginTop: 40}}>
+          <Text
+            style={{
+              fontSize: 20,
+              fontWeight: '700',
+              marginTop: 40,
+              fontFamily: 'Lexend-Regular',
+            }}>
             Edit Shop
           </Text>
         </View>
@@ -122,7 +128,14 @@ function ShopOwnerEditShop({navigation}) {
               // borderRadius: '50%',
               marginTop: 10,
             }}>
-            <Text style={{color: 'white', fontWeight: '500'}}>Create</Text>
+            <Text
+              style={{
+                color: 'white',
+                fontWeight: '500',
+                fontFamily: 'Lexend-Regular',
+              }}>
+              Create
+            </Text>
           </TouchableOpacity>
         </View>
       </ScrollView>
@@ -141,5 +154,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginRight: 20,
     marginTop: 7,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

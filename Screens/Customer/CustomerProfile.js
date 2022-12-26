@@ -20,7 +20,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import Loader from '../Loader/Loader';
 import Lottie from 'lottie-react-native';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 const CustomerProfile = ({navigation}) => {
   const isFocused = useIsFocused();
@@ -97,6 +97,7 @@ const CustomerProfile = ({navigation}) => {
                   fontWeight: 'bold',
                   marginTop: 27,
                   marginLeft: 10,
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 {userdetails?.firstname + ' ' + userdetails?.lastname}
               </Text>
@@ -142,7 +143,15 @@ const CustomerProfile = ({navigation}) => {
               alignItems: 'center',
               borderColor: 'white',
             }}>
-            <Text style={{fontWeight: 'bold', color: 'white'}}>Logout</Text>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Logout
+            </Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -159,7 +168,13 @@ const CustomerProfile = ({navigation}) => {
               alignItems: 'center',
               borderColor: 'white',
             }}>
-            <Text style={{fontWeight: 'bold', color: 'white'}}>
+            <Text
+              style={{
+                fontWeight: 'bold',
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               Edit Profile
             </Text>
           </TouchableOpacity>
@@ -184,6 +199,7 @@ const CustomerProfile = ({navigation}) => {
                 fontWeight: 'bold',
                 fontSize: 20,
                 color: 'white',
+                fontFamily: 'Lexend-Regular',
               }}>
               My Products
             </Text>
@@ -208,6 +224,7 @@ const CustomerProfile = ({navigation}) => {
                   fontWeight: '700',
                   marginLeft: 10,
                   color: 'white',
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 Fetching Data for You
               </Text>
@@ -233,6 +250,7 @@ const CustomerProfile = ({navigation}) => {
                   marginLeft: 10,
                   color: 'white',
                   textAlign: 'center',
+                  fontFamily: 'Lexend-Regular',
                 }}>
                 You haven't Posted any Product Yet :(
               </Text>
@@ -300,6 +318,7 @@ const CustomerProfile = ({navigation}) => {
                               marginTop: 0,
                               marginLeft: 10,
                               color: Font.TextColor,
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             {item.Name}
                           </Text>
@@ -308,6 +327,8 @@ const CustomerProfile = ({navigation}) => {
                               marginTop: 5,
                               marginLeft: 10,
                               color: 'grey',
+                              fontFamily: 'Lexend-Regular',
+                              fontWeight: '400',
                             }}>
                             Color: {item.Color}
                           </Text>
@@ -317,6 +338,7 @@ const CustomerProfile = ({navigation}) => {
                               marginTop: 5,
                               marginLeft: 10,
                               color: '#8739F9',
+                              fontFamily: 'Lexend-Regular',
                             }}>
                             Rs. {item.Price}
                           </Text>
@@ -337,7 +359,12 @@ const CustomerProfile = ({navigation}) => {
                                 backgroundColor: '#8739F9',
                                 borderRadius: 20,
                               }}>
-                              <Text style={{fontWeight: '600', color: 'white'}}>
+                              <Text
+                                style={{
+                                  fontWeight: '600',
+                                  color: 'white',
+                                  fontFamily: 'Lexend-Regular',
+                                }}>
                                 Edit
                               </Text>
                             </TouchableOpacity>
@@ -376,5 +403,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     backgroundColor: '#000000c0',
+    fontFamily: 'Lexend-Regular',
   },
 });

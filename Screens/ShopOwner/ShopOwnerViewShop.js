@@ -10,7 +10,7 @@ import {StyleSheet} from 'react-native';
 
 import axios from 'axios';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import port from '../Port/Port';
 
@@ -66,6 +66,8 @@ function ShopOwnerViewShop({navigation}) {
             fontWeight: '700',
             marginTop: 40,
             color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           MY VEHICLE BUDDY
         </Text>
@@ -129,6 +131,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: 0.5,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   inputText: {
     flexDirection: 'row',
@@ -140,10 +144,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '700',
     color: Font.TextColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   text: {
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

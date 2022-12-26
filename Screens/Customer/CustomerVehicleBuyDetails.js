@@ -16,7 +16,7 @@ import {
   Linking,
   Platform,
 } from 'react-native';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import {NavigationContainer} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {SliderBox} from 'react-native-image-slider-box';
@@ -79,6 +79,7 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               fontWeight: 'bold',
               marginLeft: 14,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             {product.Name}
           </Text>
@@ -91,6 +92,7 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               fontWeight: 'bold',
               marginLeft: 14,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Rs. {product.Price} Lac
           </Text>
@@ -115,6 +117,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Model Year: {product.Model_Year}
           </Text>
@@ -124,6 +128,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Mileage: {product.Mileage}
           </Text>
@@ -133,6 +139,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Engine Type: {product.Engine_Type}
           </Text>
@@ -142,6 +150,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Transmission: {product.Transmission}
           </Text>
@@ -151,6 +161,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Color: {product.Color}
           </Text>
@@ -160,6 +172,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Assembly: {product.Assembly}
           </Text>
@@ -169,6 +183,8 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
               marginTop: 9,
               marginLeft: 9,
               color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '400',
             }}>
             Body Type: {product.Body_Type}
           </Text>
@@ -194,7 +210,14 @@ const CustomerVehicleBuyDetails = ({navigation, route}) => {
             onPress={() => {
               makeCall();
             }}>
-            <Text style={{color: 'white', fontSize: 14, padding: 0}}>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 13,
+                padding: 0,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               Contact the Buyer
             </Text>
           </TouchableOpacity>
@@ -253,11 +276,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 9,
     marginLeft: 9,
+    fontFamily: 'Lexend-Regular',
   },
   prdtext2: {
     fontSize: 12,
     marginTop: 9,
     marginLeft: 9,
+    fontFamily: 'Lexend-Regular',
   },
   header: {
     marginTop: 30,
@@ -269,5 +294,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     marginRight: 40,
+    fontFamily: 'Lexend-Regular',
   },
 });

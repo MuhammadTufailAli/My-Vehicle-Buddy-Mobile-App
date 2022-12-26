@@ -22,7 +22,7 @@ import Lottie from 'lottie-react-native';
 import axios from 'axios';
 import port from '../Port/Port';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import MapView, {Marker} from 'react-native-maps';
 import {Rating, AirbnbRating} from 'react-native-ratings';
 
@@ -284,7 +284,16 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
             onPress={() => {
               deleteNotification();
             }}>
-            <Text style={{marginRight: 8, color: 'white'}}> Cancel</Text>
+            <Text
+              style={{
+                marginRight: 8,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              {' '}
+              Cancel
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -385,12 +394,15 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                           color: 'white',
                           fontSize: 16,
                           fontWeight: '700',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         {req.sender.firstname} {req.sender.lastname}
                       </Text>
                       <Text
                         style={{
                           color: 'white',
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         {req.sender.role}
                       </Text>
@@ -412,6 +424,8 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                             fontSize: 13,
                             color: 'white',
                             marginLeft: 2,
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           {req.sender.ratingsAverage}/5 (
                           {req.sender.ratingQuantity})
@@ -428,6 +442,7 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                           color: Font.ButtonColor,
                           fontSize: 18,
                           fontWeight: 'bold',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         PKR {req.price}
                       </Text>
@@ -465,7 +480,14 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                         justifyContent: 'center',
                         alignItems: 'center',
                       }}>
-                      <Text style={{color: 'red'}}>Decline</Text>
+                      <Text
+                        style={{
+                          color: 'red',
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}>
+                        Decline
+                      </Text>
                     </TouchableOpacity>
                     <TouchableOpacity
                       onPress={() => {
@@ -485,7 +507,14 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                         justifyContent: 'center',
                         alignItems: 'center',
                       }}>
-                      <Text style={{color: 'white'}}>Accept</Text>
+                      <Text
+                        style={{
+                          color: 'white',
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}>
+                        Accept
+                      </Text>
                     </TouchableOpacity>
                   </View>
                 </View>
@@ -510,7 +539,14 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               {description}
             </Text>
           </View>
@@ -521,7 +557,14 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               {address}
             </Text>
           </View>
@@ -532,9 +575,21 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
               color={Font.ButtonColor}
               style={{flex: 1}}
             />
-            <Text style={{flex: 6, color: 'white', fontSize: 16}}>
+            <Text
+              style={{
+                flex: 6,
+                color: 'white',
+                fontSize: 16,
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
               PKR{' '}
-              <Text style={{color: Font.ButtonColor, fontWeight: 'bold'}}>
+              <Text
+                style={{
+                  color: Font.ButtonColor,
+                  fontWeight: 'bold',
+                  fontFamily: 'Lexend-Regular',
+                }}>
                 {price}
               </Text>
               , cash
@@ -551,7 +606,15 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
 
               justifyContent: 'center',
             }}>
-            <Text style={{fontSize: 16, color: 'white'}}>Current fare</Text>
+            <Text
+              style={{
+                fontSize: 16,
+                color: 'white',
+                fontFamily: 'Lexend-Regular',
+                fontWeight: '400',
+              }}>
+              Current fare
+            </Text>
           </View>
           {/* Increase or decrease money */}
           <View
@@ -584,9 +647,23 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                     alert('Quantity Must be atleast 1');
                   }
                 }}>
-                <Text style={{color: 'white'}}>-5</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
+                  -5
+                </Text>
               </TouchableOpacity>
-              <Text style={{color: 'white'}}>PKR {price}</Text>
+              <Text
+                style={{
+                  color: 'white',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                PKR {price}
+              </Text>
 
               <TouchableOpacity
                 style={{
@@ -607,7 +684,14 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
                     alert('Quantity Must be atleast 1');
                   }
                 }}>
-                <Text style={{color: 'white'}}>+5</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
+                  +5
+                </Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -631,7 +715,14 @@ const CustomerMechanicFindingScreen = ({navigation, route}) => {
               onPress={() => {
                 updateMechanicReq();
               }}>
-              <Text style={{color: 'white'}}>Send Request</Text>
+              <Text
+                style={{
+                  color: 'white',
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
+                Send Request
+              </Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -647,5 +738,7 @@ const styles = StyleSheet.create({
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

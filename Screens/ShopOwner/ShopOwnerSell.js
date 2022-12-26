@@ -31,7 +31,7 @@ import port from '../Port/Port';
 import axios from 'axios';
 
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 const ShopOwnerSell = ({navigation}) => {
   const {userdetails, setuserdetails} = useContext(CartProvider);
@@ -150,12 +150,25 @@ const ShopOwnerSell = ({navigation}) => {
     return (
       <View>
         <View style={{alignItems: 'center', margin: 10}}>
-          <Text style={{fontSize: 26, color: Font.TextColor}}>
+          <Text
+            style={{
+              fontSize: 26,
+              color: Font.TextColor,
+              fontFamily: 'Lexend-Regular',
+              fontWeight: '700',
+            }}>
             <Text style={{color: '#8739F9'}}>Welcome </Text>
             {userdetails?.firstname} {userdetails?.lastname}
           </Text>
         </View>
-        <Text style={{fontSize: 16, marginLeft: 10, color: Font.TextColor}}>
+        <Text
+          style={{
+            fontSize: 16,
+            marginLeft: 10,
+            color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
+          }}>
           We are glad to see you here.
         </Text>
         <Text
@@ -164,6 +177,8 @@ const ShopOwnerSell = ({navigation}) => {
             marginLeft: 10,
             marginBottom: 20,
             color: Font.TextColor,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           You can not post an Ad untill you create a shop.
         </Text>
@@ -191,7 +206,13 @@ const ShopOwnerSell = ({navigation}) => {
 
             marginTop: -40,
           }}>
-          <Text style={{color: 'white', fontWeight: '500', fontSize: 16}}>
+          <Text
+            style={{
+              color: 'white',
+              fontWeight: '500',
+              fontSize: 16,
+              fontFamily: 'Lexend-Regular',
+            }}>
             Create Shop
           </Text>
         </TouchableOpacity>
@@ -214,6 +235,7 @@ const ShopOwnerSell = ({navigation}) => {
                       fontWeight: 'bold',
                       marginBottom: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     Sell <Text style={{color: '#8739F9'}}>Product</Text>
                   </Text>
@@ -261,6 +283,8 @@ const ShopOwnerSell = ({navigation}) => {
                             paddingBottom: 8,
                             borderBottomWidth: 0.8,
                             borderColor: 'grey',
+                            fontFamily: 'Lexend-Regular',
+                            fontWeight: '400',
                           }}>
                           Delete
                         </Text>
@@ -330,6 +354,8 @@ const ShopOwnerSell = ({navigation}) => {
                         marginTop: 4,
                         borderBottomWidth: 0.6,
                         borderColor: 'grey',
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
                       }}>
                       {images.length} Photos
                     </Text>
@@ -347,11 +373,20 @@ const ShopOwnerSell = ({navigation}) => {
                             padding: 5,
                             fontSize: 15,
                             fontWeight: '700',
+                            fontFamily: 'Lexend-Regular',
                           }}>
                           Add More Photo
                         </Text>
                       </TouchableOpacity>
-                      <Text style={{fontSize: 18, marginTop: 1}}>|</Text>
+                      <Text
+                        style={{
+                          fontSize: 18,
+                          marginTop: 1,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}>
+                        |
+                      </Text>
                       <TouchableOpacity
                         onPress={() => {
                           setImages([]);
@@ -364,6 +399,7 @@ const ShopOwnerSell = ({navigation}) => {
                             padding: 5,
                             fontSize: 15,
                             fontWeight: '700',
+                            fontFamily: 'Lexend-Regular',
                           }}>
                           Delete All Photos
                         </Text>
@@ -377,6 +413,8 @@ const ShopOwnerSell = ({navigation}) => {
                     fontSize: 16,
                     marginLeft: 10,
                     color: Font.TextColor,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   ACCESSORY DETAILS
                 </Text>
@@ -395,6 +433,8 @@ const ShopOwnerSell = ({navigation}) => {
                           color: Font.LabelColor,
                           marginTop: 5,
                           marginBottom: -8,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Location
                       </Text>
@@ -442,6 +482,8 @@ const ShopOwnerSell = ({navigation}) => {
                           color: Font.LabelColor,
                           marginTop: 5,
                           marginBottom: -8,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
                         }}>
                         Category Information
                       </Text>
@@ -481,6 +523,8 @@ const ShopOwnerSell = ({navigation}) => {
                       color: Font.LabelColor,
                       marginTop: 5,
                       marginBottom: -8,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Title
                   </Text>
@@ -500,6 +544,8 @@ const ShopOwnerSell = ({navigation}) => {
                       color: Font.LabelColor,
                       marginTop: 5,
                       marginBottom: -8,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Price
                   </Text>
@@ -526,6 +572,8 @@ const ShopOwnerSell = ({navigation}) => {
                       color: Font.LabelColor,
                       marginTop: 5,
                       marginBottom: -8,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Condition
                   </Text>
@@ -552,6 +600,8 @@ const ShopOwnerSell = ({navigation}) => {
                       color: Font.LabelColor,
                       marginTop: 5,
                       marginBottom: -8,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Description
                   </Text>
@@ -569,6 +619,8 @@ const ShopOwnerSell = ({navigation}) => {
                       color: Font.LabelColor,
                       marginTop: 5,
                       marginBottom: -8,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
                     }}>
                     Quantity
                   </Text>
@@ -614,7 +666,14 @@ const ShopOwnerSell = ({navigation}) => {
                       alert('Enter all fields please!!!');
                     }
                   }}>
-                  <Text style={{color: 'white', fontWeight: '500'}}>Post</Text>
+                  <Text
+                    style={{
+                      color: 'white',
+                      fontWeight: '500',
+                      fontFamily: 'Lexend-Regular',
+                    }}>
+                    Post
+                  </Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -639,6 +698,8 @@ const styles = StyleSheet.create({
     borderColor: '#000000',
     borderBottomWidth: 1,
     marginBottom: 30,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   btnContainer: {
     backgroundColor: 'white',
@@ -670,10 +731,14 @@ const styles = StyleSheet.create({
     marginTop: 7,
     marginBottom: 10,
     color: Font.TextColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   buttonText: {
     fontSize: 20,
     color: 'white',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 
   centeredView: {
@@ -714,6 +779,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   modalText: {
     marginBottom: 15,
@@ -722,6 +789,8 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     fontSize: 18,
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

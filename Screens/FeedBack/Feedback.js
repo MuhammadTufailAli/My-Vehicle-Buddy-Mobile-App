@@ -109,7 +109,12 @@ const Feedback = () => {
           <Modal animationType="fade" visible={getmodalvisible}>
             <View style={styles.centeredView}>
               <View style={styles.modalView}>
-                <Text style={{textAlign: 'center'}}>
+                <Text
+                  style={{
+                    textAlign: 'center',
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
+                  }}>
                   Your feedback has been posted
                 </Text>
                 <View>
@@ -135,6 +140,7 @@ const Feedback = () => {
                         color: 'white',
                         fontSize: 13,
                         fontWeight: 'bold',
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       Go Back home
                     </Text>
@@ -205,10 +211,22 @@ const Feedback = () => {
                         paddingVertical: 20,
                         flex: 1,
                       }}>
-                      <Text style={{fontWeight: 'bold', fontSize: 18}}>
+                      <Text
+                        style={{
+                          fontWeight: 'bold',
+                          fontSize: 18,
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}>
                         {item.username}
                       </Text>
-                      <Text style={{fontSize: 15, color: 'black'}}>
+                      <Text
+                        style={{
+                          fontSize: 15,
+                          color: 'black',
+                          fontFamily: 'Lexend-Regular',
+                          fontWeight: '400',
+                        }}>
                         {item.userfeedback}
                       </Text>
                     </View>
@@ -288,10 +306,17 @@ const Feedback = () => {
                         fontWeight: 'bold',
                         fontSize: 18,
                         marginBottom: 8,
+                        fontFamily: 'Lexend-Regular',
                       }}>
                       {item.Question}
                     </Text>
-                    <Text style={{fontSize: 15, color: 'black'}}>
+                    <Text
+                      style={{
+                        fontSize: 15,
+                        color: 'black',
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
+                      }}>
                       {item.Answer}
                     </Text>
                   </View>
@@ -369,7 +394,9 @@ const Feedback = () => {
             />
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'flex-end'}}>
-            <Text>Rate Us: </Text>
+            <Text style={{fontFamily: 'Lexend-Regular', fontWeight: '400'}}>
+              Rate Us:{' '}
+            </Text>
             {/* <StarRating rating={getRating} onChange={setRating} starSize={20} /> */}
 
             <AirbnbRating
@@ -398,6 +425,7 @@ const Feedback = () => {
               fontWeight: 'bold',
               color: '#1A3C40',
               marginRight: 100,
+              fontFamily: 'Lexend-Regular',
             }}>
             Users Suggestion
           </Text>
@@ -422,10 +450,22 @@ const Feedback = () => {
                       paddingVertical: 20,
                       flex: 1,
                     }}>
-                    <Text style={{fontWeight: 'bold', fontSize: 18}}>
+                    <Text
+                      style={{
+                        fontWeight: 'bold',
+                        fontSize: 18,
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
+                      }}>
                       {item.UserName}
                     </Text>
-                    <Text style={{fontSize: 15, color: 'black'}}>
+                    <Text
+                      style={{
+                        fontSize: 15,
+                        color: 'black',
+                        fontFamily: 'Lexend-Regular',
+                        fontWeight: '400',
+                      }}>
                       {item.UserReview}
                     </Text>
                     {/* <StarRating rating={item.UserRating} starSize={20} /> */}
@@ -525,6 +565,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 14,
     padding: 0,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   view: {
     margin: 0,
@@ -545,10 +587,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'white',
     marginRight: 100,
+    fontFamily: 'Lexend-Regular',
   },
   text2: {
     fontSize: 15,
     color: '#1A3C40',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   cartCard: {
     height: 160,

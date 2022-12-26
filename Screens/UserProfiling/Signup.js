@@ -10,7 +10,7 @@ import {
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import {StyleSheet} from 'react-native';
 import port from '../Port/Port';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 
@@ -201,13 +201,7 @@ function SignUp({navigation, route}) {
           name="car"
           size={25}
         /> */}
-        <Text
-          style={{
-            fontSize: 20,
-            fontWeight: '700',
-            marginTop: 40,
-            color: Font.TextColor,
-          }}>
+        <Text style={Commonstyles.black207}>
           {user} <Text style={{color: '#8739F9'}}>SignUp</Text>
         </Text>
       </View>
@@ -242,6 +236,8 @@ function SignUp({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.firstname}
               </Text>
@@ -261,6 +257,8 @@ function SignUp({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.lastname}
               </Text>
@@ -283,6 +281,8 @@ function SignUp({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.email}
               </Text>
@@ -304,6 +304,8 @@ function SignUp({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.password}
               </Text>
@@ -325,6 +327,8 @@ function SignUp({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.confirmPassword}
               </Text>
@@ -345,6 +349,8 @@ function SignUp({navigation, route}) {
                   color: 'red',
                   alignSelf: 'center',
                   marginTop: 4,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
                 }}>
                 {errors.PhoneNumber}
               </Text>
@@ -358,7 +364,13 @@ function SignUp({navigation, route}) {
                 backgroundColor: Font.LightColor,
                 borderRadius: 15,
               }}>
-              <Text style={{color: Font.TextColor, marginBottom: 10}}>
+              <Text
+                style={{
+                  color: Font.TextColor,
+                  marginBottom: 10,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 CNIC (Front Side)
               </Text>
               {cnicFrontImageUrl === '' ? (
@@ -380,7 +392,13 @@ function SignUp({navigation, route}) {
                       borderRadius: 10,
                     }}
                   />
-                  <Text style={{marginTop: 10, color: 'white'}}>
+                  <Text
+                    style={{
+                      marginTop: 10,
+                      color: 'white',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
                     Image Uploaded successfully
                   </Text>
                 </View>
@@ -411,7 +429,13 @@ function SignUp({navigation, route}) {
                 backgroundColor: Font.LightColor,
                 borderRadius: 15,
               }}>
-              <Text style={{color: Font.TextColor, marginBottom: 10}}>
+              <Text
+                style={{
+                  color: Font.TextColor,
+                  marginBottom: 10,
+                  fontFamily: 'Lexend-Regular',
+                  fontWeight: '400',
+                }}>
                 CNIC (Back Side)
               </Text>
               {cnicBackImageUrl === '' ? (
@@ -433,7 +457,13 @@ function SignUp({navigation, route}) {
                       borderRadius: 10,
                     }}
                   />
-                  <Text style={{marginTop: 10, color: 'white'}}>
+                  <Text
+                    style={{
+                      marginTop: 10,
+                      color: 'white',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
                     Image Uploaded successfully
                   </Text>
                 </View>
@@ -467,7 +497,14 @@ function SignUp({navigation, route}) {
                   marginTop: 10,
                 }}
                 onPress={handleSubmit}>
-                <Text style={{color: 'white', fontWeight: '500'}}>SignUp</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontWeight: '500',
+                    fontFamily: 'Lexend-Medium',
+                  }}>
+                  SignUp
+                </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={{marginBottom: 30}}
@@ -476,7 +513,15 @@ function SignUp({navigation, route}) {
                 }}>
                 <Text style={{color: Font.TextBackground}}>
                   {'\n'} Already have an account?
-                  <Text style={{color: '#8739F9'}}> Login</Text>{' '}
+                  <Text
+                    style={{
+                      color: '#8739F9',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
+                    {' '}
+                    Login
+                  </Text>{' '}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -686,10 +731,14 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 7,
     color: 'black',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   buttonText: {
     fontSize: 16,
     color: '#8739F9',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

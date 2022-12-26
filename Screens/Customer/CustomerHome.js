@@ -20,7 +20,7 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 // import {io} from 'socket.io-client';
 import CartProvider from '../ContextApi/contextApi';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import Loader from '../Loader/Loader';
 import Lottie from 'lottie-react-native';
 import {ScrollView} from 'react-native-gesture-handler';
@@ -431,36 +431,48 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#979ea4',
     marginTop: 5,
+    fontFamily: 'Lexend-Regular',
   },
   text2: {
     fontSize: 20,
     fontWeight: '700',
     color: Font.LabelColor,
+    fontFamily: 'Lexend-Regular',
   },
   text3: {
+    fontFamily: 'Lexend-Regular',
+
     fontSize: 16,
     color: Font.LabelColor,
 
     fontWeight: '700',
   },
   text4: {
+    fontFamily: 'Lexend-Regular',
+
     fontSize: 18,
     fontWeight: 'bold',
 
     color: '#f4f4f4',
   },
   text6: {
+    fontFamily: 'Lexend-Regular',
+
     fontSize: 18,
     fontWeight: 'bold',
     marginLeft: 8,
     color: Font.LabelColor,
   },
   text5: {
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
     fontSize: 14,
 
     color: '#f4f4f4',
   },
   text7: {
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
     fontSize: 14,
     marginLeft: 10,
     color: Font.LabelColor,
@@ -521,9 +533,12 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
+    fontFamily: 'Lexend-Regular',
   },
   modalText: {
     marginBottom: 15,
     textAlign: 'center',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

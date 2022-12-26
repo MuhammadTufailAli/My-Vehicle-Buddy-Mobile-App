@@ -13,7 +13,7 @@ import CartProvider from '../ContextApi/contextApi';
 import port from '../Port/Port';
 import Lottie from 'lottie-react-native';
 import {io} from 'socket.io-client';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
 
@@ -148,7 +148,13 @@ const SignIn = ({navigation, route}) => {
           autoPlay
           loop
         />
-        <Text style={{marginTop: -107, color: 'red'}}>
+        <Text
+          style={{
+            marginTop: -107,
+            color: 'red',
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
+          }}>
           Incorrect Email or Password
         </Text>
       </View>
@@ -157,20 +163,14 @@ const SignIn = ({navigation, route}) => {
 
   return (
     <View>
-      <View style={{alignItems: 'center', marginTop: 50}}>
+      <View style={{alignItems: 'center', marginTop: 80}}>
         {/* <Icon
           style={{margin: 10, justifyContent: 'center', color: '#1DA1F2'}}
           name="car"
           size={25}
         /> */}
-        <Text
-          style={{
-            fontSize: 20,
-            fontWeight: '800',
-            marginTop: 40,
-            color: Font.TextColor,
-          }}>
-          {user} <Text style={{color: '#8739F9'}}>Login</Text>
+        <Text style={Commonstyles.black207}>
+          {user} <Text style={Commonstyles.Purple207}>Login</Text>
         </Text>
       </View>
 
@@ -201,6 +201,8 @@ const SignIn = ({navigation, route}) => {
                     color: 'red',
                     alignSelf: 'center',
                     marginTop: 4,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   {errors.email}
                 </Text>
@@ -222,6 +224,8 @@ const SignIn = ({navigation, route}) => {
                     color: 'red',
                     alignSelf: 'center',
                     marginTop: 4,
+                    fontFamily: 'Lexend-Regular',
+                    fontWeight: '400',
                   }}>
                   {errors.password}
                 </Text>
@@ -240,13 +244,28 @@ const SignIn = ({navigation, route}) => {
                   margin: 10,
                 }}
                 onPress={handleSubmit}>
-                <Text style={{color: 'white', fontWeight: '500'}}>Login</Text>
+                <Text
+                  style={{
+                    color: 'white',
+                    fontWeight: '500',
+                    fontFamily: 'Lexend-Regular',
+                  }}>
+                  Login
+                </Text>
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => {
                   alert('Under Development');
                 }}>
-                <Text style={{color: '#8739F9'}}>Forgetten Password?</Text>
+                <Text
+                  style={{
+                    color: '#8739F9',
+                    fontSize: 14,
+                    fontWeight: '400',
+                    fontFamily: 'Lexend-Regular',
+                  }}>
+                  Forgetten Password?
+                </Text>
               </TouchableOpacity>
 
               <TouchableOpacity
@@ -260,7 +279,15 @@ const SignIn = ({navigation, route}) => {
                 }}>
                 <Text style={{color: Font.TextBackground}}>
                   {'\n'} Don't have an account?
-                  <Text style={{color: '#8739F9'}}> SignUp</Text>{' '}
+                  <Text
+                    style={{
+                      color: '#8739F9',
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
+                    }}>
+                    {' '}
+                    SignUp
+                  </Text>{' '}
                 </Text>
               </TouchableOpacity>
 
@@ -340,6 +367,8 @@ const styles = StyleSheet.create({
     marginRight: 20,
     marginTop: 10,
     color: 'black',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

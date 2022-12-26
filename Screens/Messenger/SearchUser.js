@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import React, {useState, useContext} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import CartProvider from '../ContextApi/contextApi';
 import axios from 'axios';
 import port from '../Port/Port';
@@ -216,6 +216,7 @@ const SearchUser = ({navigation, route}) => {
                       fontSize: 16,
                       fontWeight: 'bold',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     {item.firstname} {item.lastname}
                   </Text>
@@ -236,5 +237,7 @@ const styles = StyleSheet.create({
     color: 'white',
 
     fontSize: 18,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });

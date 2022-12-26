@@ -18,7 +18,7 @@ import {
 } from 'react-native';
 
 import Loader from '../Loader/Loader';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 
 import CartProvider from '../ContextApi/contextApi';
 import axios from 'axios';
@@ -155,6 +155,7 @@ const ShopOwnerEditProfile = ({navigation}) => {
             fontWeight: '700',
             marginLeft: 10,
             color: Font.LabelColor,
+            fontFamily: 'Lexend-Regular',
           }}>
           Fetching Data for You
         </Text>
@@ -177,6 +178,7 @@ const ShopOwnerEditProfile = ({navigation}) => {
                       fontWeight: 'bold',
                       marginBottom: 10,
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
                     }}>
                     Edit <Text style={{color: '#8739F9'}}>Profile</Text>
                   </Text>
@@ -204,6 +206,7 @@ const ShopOwnerEditProfile = ({navigation}) => {
                           fontSize: 16,
                           color: '#8739F9',
                           fontWeight: 'bold',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         Change Profile Photo
                       </Text>
@@ -234,6 +237,7 @@ const ShopOwnerEditProfile = ({navigation}) => {
                           fontSize: 16,
                           color: '#8739F9',
                           fontWeight: 'bold',
+                          fontFamily: 'Lexend-Regular',
                         }}>
                         Change Profile Photo
                       </Text>
@@ -303,7 +307,12 @@ const ShopOwnerEditProfile = ({navigation}) => {
                   onPress={() => {
                     updateProfile();
                   }}>
-                  <Text style={{color: 'white', fontWeight: '500'}}>
+                  <Text
+                    style={{
+                      color: 'white',
+                      fontWeight: '500',
+                      fontFamily: 'Lexend-Regular',
+                    }}>
                     Update
                   </Text>
                 </TouchableOpacity>
@@ -330,6 +339,8 @@ const styles = StyleSheet.create({
     borderColor: '#000000',
     borderBottomWidth: 1,
     marginBottom: 30,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   btnContainer: {
     backgroundColor: 'white',
@@ -358,10 +369,14 @@ const styles = StyleSheet.create({
     marginTop: 7,
     marginBottom: 10,
     color: Font.TextColor,
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
   buttonText: {
     fontSize: 20,
     color: 'white',
+    fontFamily: 'Lexend-Regular',
+    fontWeight: '400',
   },
 });
 

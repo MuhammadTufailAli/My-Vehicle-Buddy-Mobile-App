@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import React, {useState, useMemo} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import {Font} from '../font/Font';
+import {Font, Commonstyles} from '../font/Font';
 import port from '../Port/Port';
 
 const SelectCity = ({navigation, route}) => {
@@ -974,6 +974,8 @@ const SelectCity = ({navigation, route}) => {
           style={{
             color: 'white',
             fontSize: 18,
+            fontFamily: 'Lexend-Regular',
+            fontWeight: '400',
           }}>
           Location
         </Text>
@@ -1075,6 +1077,7 @@ const SelectCity = ({navigation, route}) => {
               borderColor: 'grey',
               paddingBottom: 4,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Popular Cities
           </Text>
@@ -1098,6 +1101,8 @@ const SelectCity = ({navigation, route}) => {
                       borderBottomWidth: 0.5,
                       borderColor: 'grey',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
 
                       padding: 8,
                     }}>
@@ -1119,6 +1124,7 @@ const SelectCity = ({navigation, route}) => {
               borderColor: 'grey',
               paddingBottom: 4,
               color: Font.LabelColor,
+              fontFamily: 'Lexend-Regular',
             }}>
             Other Cities
           </Text>
@@ -1141,6 +1147,8 @@ const SelectCity = ({navigation, route}) => {
                       borderBottomWidth: 0.5,
                       borderColor: 'grey',
                       color: Font.TextColor,
+                      fontFamily: 'Lexend-Regular',
+                      fontWeight: '400',
 
                       padding: 8,
                     }}>
